@@ -1,0 +1,557 @@
+.cultural-map-page { background: #f5f0e5; }
+.culture-map-hero { position: relative; overflow: hidden; background: #19382d; color: #f5efe0; isolation: isolate; }
+.culture-map-hero::before { position: absolute; z-index: -1; inset: 0; background: url("../images/patterns/mega-mendung-forest.svg") center / 650px auto, linear-gradient(115deg, #19382d 18%, #254838 72%, #536545); opacity: .8; content: ""; }
+.culture-map-hero-inner { position: relative; min-height: 405px; display: flex; align-items: center; padding-block: 66px 72px; }
+.culture-map-hero-copy { position: relative; z-index: 2; max-width: 700px; }
+.culture-map-hero .eyebrow { color: #dfc17c; }
+.culture-map-hero h1 { margin: 0; font-family: var(--serif); font-size: clamp(48px, 6.4vw, 78px); font-weight: 500; letter-spacing: -.045em; line-height: 1.04; }
+.culture-map-hero h1 em { color: #dfc17c; font-weight: 500; }
+.culture-map-hero-copy > p:not(.eyebrow) { max-width: 510px; margin: 20px 0 23px; color: rgba(245,239,224,.78); font-size: 13px; line-height: 1.85; }
+.culture-map-hero-meta { display: flex; flex-wrap: wrap; gap: 23px; color: rgba(245,239,224,.74); font-size: 10px; letter-spacing: .06em; }
+.culture-map-hero-meta span:first-child { color: #e3cb8b; }
+.culture-map-orbit { position: absolute; top: 50%; right: 3%; width: 360px; height: 300px; opacity: .74; transform: translateY(-50%) rotate(-12deg); }
+.culture-map-orbit-ring { position: absolute; inset: 8% 2%; border: 1px solid rgba(226,202,143,.38); border-radius: 50%; transform: rotate(-24deg); }
+.culture-map-orbit-ring::before, .culture-map-orbit-ring::after { position: absolute; inset: 14% 20%; border: 1px solid rgba(226,202,143,.22); border-radius: 50%; content: ""; transform: rotate(45deg); }
+.culture-map-orbit-ring::after { inset: -2% 28%; transform: rotate(-37deg); }
+.culture-map-orbit-island { position: absolute; display: block; background: linear-gradient(145deg,#d9c68d,#8a9a69 46%,#385b48); border: 1px solid rgba(239,222,174,.6); box-shadow: 4px 7px 0 rgba(5,21,15,.3), 9px 14px 20px rgba(0,0,0,.24), inset 3px 4px 8px rgba(255,255,255,.3); transform: rotate(29deg) skewY(-19deg); }
+.culture-map-orbit-island-one { top: 27%; left: 13%; width: 29%; height: 11%; border-radius: 45% 20% 30% 45%; }
+.culture-map-orbit-island-two { top: 49%; left: 32%; width: 31%; height: 8%; border-radius: 38% 25% 35% 45%; }
+.culture-map-orbit-island-three { top: 39%; right: 13%; width: 18%; height: 17%; border-radius: 49% 35% 53% 24%; transform: rotate(45deg) skewY(-19deg); }
+.culture-map-orbit-star { position: absolute; top: 10%; right: 21%; color: #e6ca82; font-size: 28px; }
+.culture-map-orbit-caption { position: absolute; right: 2%; bottom: 1%; color: rgba(245,239,224,.76); font-family: var(--serif); font-size: 14px; letter-spacing: .08em; line-height: 1.35; text-align: right; transform: rotate(12deg); }
+.culture-atlas-section { position: relative; padding: 66px 0 78px; background: #f8f5ed url("../images/patterns/mega-mendung-ivory.svg") center top / 610px auto; }
+.culture-atlas-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 25px; }
+.culture-atlas-heading .eyebrow { margin-bottom: 13px; }
+.culture-atlas-heading h2 { margin: 0; color: var(--green); font-family: var(--serif); font-size: clamp(31px, 4vw, 47px); font-weight: 500; letter-spacing: -.035em; }
+.culture-atlas-heading h2 em { color: var(--terracotta); font-weight: 500; }
+.culture-atlas-heading > p { max-width: 370px; margin: 0 0 5px; color: var(--muted); font-size: 11px; line-height: 1.8; }
+.culture-map-toolbar { display: flex; align-items: center; gap: 10px; margin-bottom: 15px; padding: 12px; border: 1px solid rgba(62,67,50,.12); border-radius: 8px; background: rgba(255,254,249,.9); box-shadow: 0 8px 24px rgba(39,51,38,.04); }
+.culture-map-search { min-width: 220px; height: 42px; display: flex; align-items: center; flex: 1; gap: 10px; padding: 0 12px; border: 1px solid rgba(41,40,32,.14); border-radius: 5px; background: #fffefa; }
+.culture-map-search:focus-within { border-color: var(--green); box-shadow: 0 0 0 3px rgba(37,72,56,.09); }
+.culture-map-search svg { width: 17px; flex: 0 0 auto; fill: none; stroke: #777267; stroke-width: 1.6; stroke-linecap: round; }
+.culture-map-search input { width: 100%; min-width: 0; border: 0; outline: 0; background: transparent; color: var(--charcoal); font-size: 10px; }
+.culture-map-search input::placeholder { color: #888579; }
+.culture-map-search kbd { min-width: 20px; padding: 2px 5px; border: 1px solid #e6e1d6; border-radius: 3px; color: #888579; font-family: var(--sans); font-size: 9px; text-align: center; }
+.culture-map-filter { min-width: 135px; height: 42px; display: flex; flex-direction: column; justify-content: center; gap: 1px; padding: 3px 10px 4px; border: 1px solid rgba(41,40,32,.14); border-radius: 5px; background: #fffefa; }
+.culture-map-filter span { color: #898477; font-size: 8px; letter-spacing: .05em; }
+.culture-map-filter select { width: 100%; border: 0; outline: 0; background: transparent; color: var(--charcoal); font-size: 10px; }
+.culture-map-reset { height: 42px; padding-inline: 12px; border: 1px solid rgba(37,72,56,.22); border-radius: 5px; background: transparent; color: var(--green); cursor: pointer; font-size: 9px; font-weight: 700; transition: background .2s,color .2s; }
+.culture-map-reset:hover { background: var(--green); color: white; }
+.culture-map-workspace { display: grid; grid-template-columns: minmax(0,1.7fr) minmax(310px,.82fr); align-items: stretch; gap: 16px; }
+.culture-map-canvas-wrap { position: relative; min-width: 0; overflow: hidden; border: 1px solid rgba(51,64,49,.16); border-radius: 9px; background: #cad7c1; box-shadow: 0 16px 38px rgba(34,47,37,.11); }
+.culture-map-map-topline { position: absolute; z-index: 500; top: 14px; right: 14px; left: 14px; display: flex; align-items: center; justify-content: space-between; pointer-events: none; }
+.culture-map-map-topline > span, .culture-map-map-topline button { display: inline-flex; align-items: center; gap: 8px; min-height: 34px; padding: 0 11px; border: 1px solid rgba(46,57,43,.12); border-radius: 4px; background: rgba(255,253,246,.94); box-shadow: 0 3px 12px rgba(32,43,32,.1); color: #435240; font-size: 9px; font-weight: 700; }
+.culture-map-map-topline > span i { width: 7px; height: 7px; border-radius: 50%; background: #58805c; box-shadow: 0 0 0 3px rgba(88,128,92,.14); }
+.culture-map-map-topline button { cursor: pointer; pointer-events: auto; }
+.culture-map-map-topline button:hover { background: var(--green); color: white; }
+#culture-map { width: 100%; height: 610px; z-index: 1; background: #cddac9; }
+#culture-map .leaflet-tile-pane { filter: saturate(.72) sepia(.1) contrast(.96); }
+#culture-map .leaflet-control-attribution { max-width: min(390px,80vw); background: rgba(255,253,246,.82); font-size: 8px; }
+#culture-map .leaflet-control-attribution a { color: #355a48; }
+#culture-map .leaflet-bar { overflow: hidden; border: 1px solid rgba(46,57,43,.18); border-radius: 5px; box-shadow: 0 3px 12px rgba(32,43,32,.14); }
+#culture-map .leaflet-bar a { color: var(--green); }
+#culture-map .leaflet-bar a:hover { background: #f0eadc; }
+.culture-map-map-legend { position: absolute; z-index: 400; bottom: 15px; left: 15px; display: flex; gap: 13px; padding: 8px 10px; border: 1px solid rgba(46,57,43,.13); border-radius: 4px; background: rgba(255,253,246,.92); box-shadow: 0 3px 12px rgba(32,43,32,.08); color: #4a5142; font-size: 8px; pointer-events: none; }
+.culture-map-map-legend span { display: flex; align-items: center; gap: 6px; }
+.culture-map-map-legend i { width: 7px; height: 7px; border: 2px solid white; border-radius: 50%; background: #a6533c; box-shadow: 0 0 0 1px #a6533c; }
+.culture-map-map-legend i.legend-active { background: #244b39; box-shadow: 0 0 0 1px #244b39; }
+.culture-map-status { position: absolute; z-index: 450; top: 58px; left: 14px; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+.culture-pin { border: 0; background: none; }
+.culture-pin-bubble { position: absolute; top: 0; left: 50%; width: 37px; height: 37px; display: grid; place-items: center; border: 2px solid #fffaf0; border-radius: 50% 50% 50% 5px; background: linear-gradient(145deg,#fbf3d9,#e9d39f); box-shadow: 0 4px 11px rgba(31,48,35,.28); font-size: 18px; transform: translateX(-50%) rotate(-45deg); transition: width .2s,height .2s,box-shadow .2s,background .2s; }
+.culture-pin-bubble > span { transform: rotate(45deg); }
+.culture-pin-dot { position: absolute; bottom: 1px; left: 50%; width: 7px; height: 7px; border: 1px solid white; border-radius: 50%; background: #a6533c; box-shadow: 0 0 0 2px rgba(166,83,60,.27); transform: translateX(-50%); }
+.culture-pin.is-active { z-index: 1000 !important; }
+.culture-pin.is-active .culture-pin-bubble { width: 45px; height: 45px; border-color: #fff; background: linear-gradient(145deg,#edd493,#d8b15d); box-shadow: 0 0 0 7px rgba(203,166,86,.2),0 8px 20px rgba(31,48,35,.34); font-size: 23px; animation: culture-pin-pop .42s cubic-bezier(.18,.89,.32,1.28) both; }
+.culture-pin.is-active .culture-pin-dot { width: 9px; height: 9px; background: #244b39; box-shadow: 0 0 0 4px rgba(36,75,57,.2); }
+@keyframes culture-pin-pop { 0% { transform: translateX(-50%) rotate(-45deg) scale(.5); } 70% { transform: translateX(-50%) rotate(-45deg) scale(1.13); } 100% { transform: translateX(-50%) rotate(-45deg) scale(1); } }
+.culture-map-side { min-width: 0; max-height: 610px; display: flex; flex-direction: column; overflow: hidden; border: 1px solid rgba(51,64,49,.15); border-radius: 9px; background: rgba(255,254,249,.95); box-shadow: 0 12px 30px rgba(34,47,37,.07); }
+.culture-map-detail { flex: 0 0 auto; overflow: auto; }
+.culture-map-detail-empty { min-height: 274px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: 30px 28px; background: linear-gradient(145deg,#244837,#19382d); color: #f5efe0; }
+.detail-empty-mark { display: grid; width: 40px; height: 40px; place-items: center; margin-bottom: 18px; border: 1px solid rgba(224,198,130,.55); border-radius: 50%; color: #e1c47b; font-size: 18px; }
+.culture-map-detail-kicker { margin: 0 0 7px; color: #a66a4d; font-size: 8px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.culture-map-detail-empty .culture-map-detail-kicker { color: #dfc17c; }
+.culture-map-detail-empty h3 { margin: 0 0 10px; font-family: var(--serif); font-size: 26px; font-weight: 500; }
+.culture-map-detail-empty > p:last-child { max-width: 300px; margin: 0; color: rgba(245,239,224,.72); font-size: 10px; line-height: 1.8; }
+.culture-map-detail-card { background: #fffefa; }
+.culture-map-detail-art { position: relative; height: 155px; overflow: hidden; background: linear-gradient(135deg,#455a41,#a29365 60%,#d1bd86); }
+.culture-map-detail-art::after { position: absolute; inset: 45% 0 0; background: linear-gradient(transparent,rgba(13,30,22,.58)); content: ""; pointer-events: none; }
+.culture-map-detail-art img { width: 100%; height: 100%; display: block; object-fit: cover; filter: saturate(.82); }
+.culture-map-detail-art.is-fallback { background: url("../images/patterns/mega-mendung-forest.svg") center / 270px,linear-gradient(135deg,#244837,#84916b); }
+.culture-map-detail-art-icon { position: absolute; z-index: 1; top: 50%; left: 50%; display: grid; width: 57px; height: 57px; place-items: center; border: 1px solid rgba(255,255,255,.8); border-radius: 50%; background: rgba(249,242,219,.93); box-shadow: 0 5px 18px rgba(0,0,0,.2); font-size: 27px; transform: translate(-50%,-50%); }
+.culture-map-detail-art-label { position: absolute; z-index: 2; bottom: 10px; left: 13px; color: white; font-size: 8px; letter-spacing: .08em; text-shadow: 0 1px 5px #17251d; }
+.culture-map-detail-copy { padding: 17px 20px 19px; }
+.culture-map-detail-meta { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.culture-map-detail-meta span { padding: 4px 7px; border-radius: 2px; background: #f0eadc; color: #665c45; font-size: 7px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.culture-map-detail-copy h3 { margin: 0 0 6px; color: var(--green); font-family: var(--serif); font-size: 25px; font-weight: 500; line-height: 1.18; }
+.culture-map-detail-region { display: flex; align-items: center; gap: 5px; margin: 0 0 11px !important; color: #8c6748 !important; font-size: 9px !important; }
+.culture-map-detail-region svg { width: 13px; height: 13px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.culture-map-detail-copy > p { margin: 0; color: #69675d; font-size: 9px; line-height: 1.7; }
+.culture-map-story { margin-top: 12px; padding-top: 11px; border-top: 1px solid rgba(41,40,32,.12); }
+.culture-map-story > span, .culture-map-unique strong { display: block; margin-bottom: 5px; color: var(--green); font-size: 8px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.culture-map-story p { margin: 0; color: #69675d; font-size: 9px; line-height: 1.65; }
+.culture-map-unique { display: flex; gap: 8px; margin-top: 11px; padding: 9px; border-left: 2px solid #c5a15a; background: #f6f1e4; }
+.culture-map-unique > span { color: #a6533c; font-size: 12px; }
+.culture-map-unique p { margin: 0; color: #69675d; font-size: 8px; line-height: 1.6; }
+.culture-map-unique strong { margin-bottom: 3px; font-size: 7px; }
+.culture-map-coordinates { display: flex; justify-content: space-between; margin-top: 11px; color: #8c6748; font-size: 8px; font-weight: 700; }
+.culture-map-coordinates:hover { color: var(--green); text-decoration: underline; }
+.culture-map-list-heading { display: flex; align-items: end; justify-content: space-between; flex: 0 0 auto; padding: 15px 19px 11px; border-top: 1px solid rgba(41,40,32,.12); }
+.culture-map-list-heading .culture-map-detail-kicker { margin-bottom: 3px; }
+.culture-map-list-heading h3 { margin: 0; color: var(--green); font-family: var(--serif); font-size: 19px; font-weight: 500; }
+.culture-map-list-heading > span { padding-bottom: 2px; color: #898477; font-size: 8px; }
+.culture-map-list { min-height: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-color: #b6ad98 transparent; scrollbar-width: thin; }
+.culture-map-list-item { width: 100%; min-height: 57px; display: flex; align-items: center; gap: 10px; padding: 8px 17px; border: 0; border-top: 1px solid rgba(41,40,32,.075); background: transparent; color: inherit; cursor: pointer; text-align: left; transition: background .16s; }
+.culture-map-list-item:hover, .culture-map-list-item.is-active { background: #f4eedf; }
+.culture-map-list-item.is-active { box-shadow: inset 3px 0 #a6533c; }
+.culture-map-list-item[hidden] { display: none; }
+.culture-map-list-icon { width: 33px; height: 33px; display: grid; flex: 0 0 auto; place-items: center; border-radius: 50%; background: #f0eadc; font-size: 15px; }
+.culture-map-list-copy { min-width: 0; display: grid; flex: 1; gap: 3px; }
+.culture-map-list-copy strong { overflow: hidden; color: #344738; font-size: 9px; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; }
+.culture-map-list-copy small { overflow: hidden; color: #888579; font-size: 8px; text-overflow: ellipsis; white-space: nowrap; }
+.culture-map-list-arrow { color: #a6533c; font-size: 12px; opacity: .5; }
+.culture-map-list-item:hover .culture-map-list-arrow, .culture-map-list-item.is-active .culture-map-list-arrow { opacity: 1; }
+.culture-map-no-results { margin: 0; padding: 20px; color: #777267; font-size: 10px; line-height: 1.7; }
+.culture-map-source-note { margin: 12px 0 0; color: #858173; font-size: 8px; line-height: 1.6; text-align: right; }
+@media (max-width: 900px) {
+    .culture-map-hero-inner { min-height: 375px; }
+    .culture-map-orbit { right: -9%; opacity: .42; }
+    .culture-atlas-heading { align-items: start; flex-direction: column; gap: 10px; }
+    .culture-map-workspace { grid-template-columns: minmax(0,1fr) minmax(270px,.72fr); }
+    #culture-map,.culture-map-side { height: 620px; max-height: 620px; }
+    .culture-map-toolbar { flex-wrap: wrap; }
+    .culture-map-search { flex-basis: 100%; }
+    .culture-map-filter { flex: 1; }
+}
+@media (max-width: 680px) {
+    .culture-map-hero-inner { min-height: 365px; padding-block: 55px; }
+    .culture-map-hero-copy { max-width: 560px; }
+    .culture-map-hero h1 { font-size: clamp(45px,11vw,66px); }
+    .culture-map-orbit { top: auto; right: -21%; bottom: -34%; width: 290px; height: 240px; opacity: .23; transform: rotate(-12deg); }
+    .culture-atlas-section { padding: 45px 0 55px; }
+    .culture-map-workspace { grid-template-columns: 1fr; gap: 12px; }
+    #culture-map { height: min(112vw,520px); min-height: 360px; }
+    .culture-map-side { height: auto; max-height: none; overflow: visible; }
+    .culture-map-detail { max-height: none; }
+    .culture-map-detail-empty { min-height: 215px; }
+    .culture-map-list { max-height: 390px; }
+    .culture-map-toolbar { gap: 7px; padding: 9px; }
+    .culture-map-search { min-width: 100%; }
+    .culture-map-filter { min-width: 0; }
+    .culture-map-reset { flex: 0 0 auto; }
+    .culture-map-map-topline > span,.culture-map-map-topline button { min-height: 31px; padding-inline: 8px; font-size: 8px; }
+}
+@media (max-width: 400px) {
+    .culture-map-filter { flex-basis: calc(50% - 5px); }
+    .culture-map-reset { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .culture-pin.is-active .culture-pin-bubble { animation: none; }
+}
+
+.culture-map-page {
+    background: var(--ivory);
+}
+
+.culture-map-hero {
+    min-height: 382px;
+    background: linear-gradient(112deg, #123b36 0%, #155048 54%, #174e62 100%);
+}
+
+.culture-map-hero::before {
+    z-index: 0;
+    background-image:
+        linear-gradient(90deg, #123b36 0%, rgba(18,59,54,.96) 34%, rgba(18,59,54,.65) 60%, rgba(21,67,75,.22) 100%),
+        url("../images/patterns/mega-mendung-forest.svg");
+    background-position: center, right center;
+    background-size: cover, 700px auto;
+    background-repeat: no-repeat, repeat;
+    opacity: 1;
+}
+
+.culture-map-hero-inner {
+    min-height: 382px;
+    justify-content: flex-start;
+    padding-block: 55px;
+}
+
+.culture-map-hero-copy {
+    width: min(52%, 625px);
+    max-width: 625px;
+    text-align: left;
+    animation: atlas-copy-reveal .8s cubic-bezier(.2,.7,.2,1) both;
+}
+
+.culture-map-overline {
+    margin-bottom: 12px;
+    color: #e0c47e;
+    font-size: 9px;
+    letter-spacing: .2em;
+}
+
+.culture-map-wonderful {
+    color: #d3b776;
+    font-size: 10px;
+    letter-spacing: .42em;
+}
+
+.culture-map-hero h1 {
+    margin: 3px 0 0;
+    color: #fbf3df;
+    font-size: clamp(56px, 7.2vw, 88px);
+    font-weight: 500;
+    letter-spacing: -.025em;
+    line-height: .98;
+    text-shadow: 0 7px 24px rgba(4,24,21,.2);
+}
+
+.culture-map-hero h1 em {
+    color: #ead39a;
+}
+
+.culture-map-tagline {
+    margin: 12px 0 19px;
+    color: rgba(246,241,222,.86);
+    font-size: 13px;
+    letter-spacing: .045em;
+}
+
+.culture-map-hero-meta {
+    justify-content: flex-start;
+    gap: 12px;
+    color: rgba(246,241,222,.83);
+    font-size: 9px;
+    letter-spacing: .075em;
+}
+
+.culture-map-hero-meta span:first-child {
+    color: #f0d48d;
+}
+
+.culture-map-hero-meta i {
+    background: #d37a59;
+    box-shadow: 0 0 0 3px rgba(211,122,89,.13);
+}
+
+.culture-map-hero-art {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: -2%;
+    bottom: 0;
+    width: min(68%, 920px);
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+    mask-image: linear-gradient(90deg, transparent 0, #000 19%, #000 100%);
+    animation: atlas-art-reveal 1s .12s cubic-bezier(.2,.7,.2,1) both;
+}
+
+.culture-map-hero-art img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    object-position: right center;
+    filter: saturate(.82) contrast(1.02) drop-shadow(0 18px 26px rgba(4,24,21,.2));
+    animation: atlas-art-float 10s ease-in-out infinite;
+}
+
+.culture-map-art-caption {
+    position: absolute;
+    right: 7%;
+    bottom: 12%;
+    padding: 10px 14px;
+    border: 1px solid rgba(241,222,171,.32);
+    border-radius: 2px;
+    background: rgba(16,54,49,.68);
+    color: rgba(249,242,222,.9);
+    font-size: 8px;
+    letter-spacing: .14em;
+    line-height: 1.65;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.culture-map-art-caption em {
+    color: #e2c47e;
+    font-family: var(--serif);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: .02em;
+    text-transform: none;
+}
+
+.culture-atlas-section {
+    isolation: isolate;
+    overflow: hidden;
+    padding: 58px 0 72px;
+    background: #f5f0e5;
+}
+
+.culture-atlas-section::before {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-image:
+        url("../images/patterns/mega-mendung-ivory.svg"),
+        url("../images/patterns/mega-mendung-ivory.svg");
+    background-position: left center, right center;
+    background-size: 245px auto;
+    background-repeat: repeat-y;
+    content: "";
+    opacity: .8;
+    pointer-events: none;
+    mask-image: linear-gradient(90deg, #000 0, rgba(0,0,0,.72) 5%, transparent 20%, transparent 80%, rgba(0,0,0,.72) 95%, #000 100%);
+}
+
+.culture-atlas-section > .page-shell {
+    position: relative;
+    z-index: 1;
+}
+
+.culture-atlas-heading {
+    margin-bottom: 24px;
+}
+
+.culture-atlas-heading h2 {
+    color: #19493e;
+    font-size: clamp(32px, 4vw, 46px);
+}
+
+.culture-atlas-heading > p {
+    max-width: 390px;
+    color: #68675d;
+    font-size: 11px;
+    line-height: 1.9;
+}
+
+.culture-map-toolbar {
+    gap: 9px;
+    margin-bottom: 17px;
+    padding: 11px;
+    border-color: rgba(25,73,62,.13);
+    border-radius: 9px;
+    background: rgba(251,248,239,.96);
+    box-shadow: 0 12px 30px rgba(35,55,43,.07);
+}
+
+.culture-map-search,
+.culture-map-filter {
+    border-color: rgba(25,73,62,.14);
+    border-radius: 6px;
+    background: #fffdf7;
+}
+
+.culture-map-search:focus-within {
+    border-color: #1d6458;
+    box-shadow: 0 0 0 3px rgba(29,100,88,.1);
+}
+
+.culture-map-reset {
+    border-color: rgba(23,61,50,.24);
+    border-radius: 6px;
+}
+
+.culture-map-workspace {
+    gap: 18px;
+}
+
+.culture-map-canvas-wrap {
+    border-color: rgba(21,77,75,.2);
+    border-radius: 11px;
+    background: #4aa9a5;
+    box-shadow: 0 20px 46px rgba(24,62,54,.14);
+}
+
+#culture-map {
+    background: linear-gradient(180deg, #a4d9d2, #4aa9a5);
+}
+
+.culture-map-side {
+    border-color: rgba(25,73,62,.13);
+    border-radius: 11px;
+    background: rgba(251,248,239,.97);
+    box-shadow: 0 15px 38px rgba(35,55,43,.08);
+}
+
+.culture-map-list-item:hover,
+.culture-map-list-item.is-active {
+    background: #f1ecdf;
+}
+
+.culture-map-list-item.is-active {
+    box-shadow: inset 3px 0 #b75a38;
+}
+
+.culture-map-source-note {
+    color: #777267;
+    line-height: 1.8;
+}
+
+@keyframes atlas-art-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-7px); }
+}
+
+@keyframes atlas-art-reveal {
+    from { opacity: 0; transform: translate3d(22px, 0, 0); }
+    to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@keyframes atlas-copy-reveal {
+    from { opacity: 0; transform: translate3d(0, 12px, 0); }
+    to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@media (min-width: 1100px) {
+    .culture-map-workspace {
+        grid-template-columns: minmax(0,1.58fr) minmax(350px,.82fr);
+        align-items: stretch;
+    }
+
+    #culture-map,
+    .culture-map-side {
+        height: 560px;
+        max-height: 560px;
+    }
+
+    .culture-map-side {
+        grid-template-columns: minmax(0,1fr) minmax(0,.94fr);
+        grid-template-rows: 48px minmax(0,1fr);
+        grid-template-areas: "detail list-heading" "detail list";
+    }
+
+    .culture-map-list-heading {
+        min-height: 48px;
+    }
+
+    .culture-map-list {
+        max-height: none;
+    }
+}
+
+@media (max-width: 1099px) {
+    .culture-map-workspace {
+        grid-template-columns: minmax(0,1fr);
+    }
+
+    #culture-map {
+        height: 500px;
+    }
+
+    .culture-map-side {
+        height: 390px;
+        max-height: 390px;
+    }
+}
+
+@media (max-width: 680px) {
+    .culture-map-hero,
+    .culture-map-hero-inner {
+        min-height: 340px;
+    }
+
+    .culture-map-hero-inner {
+        align-items: flex-start;
+        padding-block: 44px 38px;
+    }
+
+    .culture-map-hero::before {
+        background-image:
+            linear-gradient(90deg, rgba(18,59,54,.98) 0%, rgba(18,59,54,.83) 54%, rgba(18,59,54,.48) 100%),
+            url("../images/patterns/mega-mendung-forest.svg");
+        background-position: center, right center;
+        background-size: cover, 500px auto;
+    }
+
+    .culture-map-hero-copy {
+        width: 100%;
+        max-width: 100%;
+        padding-top: 5px;
+        text-align: left;
+    }
+
+    .culture-map-overline {
+        max-width: 250px;
+        font-size: 8px;
+        line-height: 1.8;
+    }
+
+    .culture-map-wonderful {
+        font-size: 8px;
+        letter-spacing: .35em;
+    }
+
+    .culture-map-hero h1 {
+        font-size: clamp(48px, 12vw, 64px);
+    }
+
+    .culture-map-tagline {
+        font-size: 10px;
+    }
+
+    .culture-map-hero-meta {
+        max-width: 285px;
+        justify-content: flex-start;
+        gap: 7px;
+        font-size: 7px;
+        line-height: 1.7;
+    }
+
+    .culture-map-hero-art {
+        top: auto;
+        right: -24%;
+        bottom: -1%;
+        width: 104%;
+        height: 54%;
+        opacity: .56;
+        mask-image: linear-gradient(180deg, transparent 0, #000 24%, #000 100%);
+    }
+
+    .culture-map-hero-art img {
+        object-fit: contain;
+        object-position: right bottom;
+    }
+
+    .culture-map-art-caption {
+        right: 23%;
+        bottom: 8%;
+        padding: 6px 9px;
+        font-size: 6px;
+    }
+
+    .culture-map-art-caption em {
+        font-size: 10px;
+    }
+
+    .culture-atlas-section {
+        padding: 40px 0 52px;
+    }
+
+    .culture-atlas-section::before {
+        background-size: 150px auto;
+        mask-image: linear-gradient(90deg, #000 0, transparent 14%, transparent 86%, #000 100%);
+    }
+
+    .culture-atlas-heading h2 {
+        font-size: clamp(28px, 8vw, 36px);
+    }
+
+    .culture-map-toolbar {
+        border-radius: 8px;
+        box-shadow: 0 8px 22px rgba(35,55,43,.06);
+    }
+
+    .culture-map-canvas-wrap,
+    .culture-map-side {
+        border-radius: 8px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .culture-map-hero-art,
+    .culture-map-hero-art img,
+    .culture-map-hero-copy {
+        animation: none;
+    }
+}

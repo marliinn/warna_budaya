@@ -1,0 +1,763 @@
+.admin-taxonomy-page .admin-taxonomy-heading {
+    margin-bottom: 22px;
+}
+
+.admin-taxonomy-page .admin-contract-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    margin: 0 0 20px;
+    padding: 14px 17px;
+    border: 1px solid rgba(197, 161, 90, .32);
+    background: rgba(197, 161, 90, .09);
+    color: var(--admin-charcoal);
+}
+
+.admin-taxonomy-page .admin-contract-note > span {
+    color: #94733b;
+    font-family: var(--admin-serif);
+    font-size: 19px;
+}
+
+.admin-taxonomy-page .admin-contract-note strong {
+    color: var(--admin-green);
+    font-size: 11px;
+}
+
+.admin-taxonomy-page .admin-contract-note p {
+    margin: 5px 0 0;
+    color: var(--admin-muted);
+    font-size: 10px;
+    line-height: 1.65;
+}
+
+.admin-taxonomy-page .admin-contract-note code,
+.admin-taxonomy-page .admin-taxonomy-form-contract code {
+    color: var(--admin-terracotta);
+    font-size: .95em;
+}
+
+.admin-taxonomy-page .admin-taxonomy-workspace {
+    padding: 25px;
+    border: 1px solid rgba(41, 40, 32, .1);
+    background:
+        linear-gradient(135deg, rgba(197, 161, 90, .045), transparent 34%),
+        var(--dashboard-paper);
+    box-shadow: 0 16px 42px rgba(41, 40, 32, .045);
+}
+
+.admin-taxonomy-page .admin-taxonomy-toolbar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 21px;
+}
+
+.admin-taxonomy-page .admin-taxonomy-toolbar .admin-eyebrow {
+    margin: 0 0 8px;
+}
+
+.admin-taxonomy-page .admin-taxonomy-toolbar h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    color: var(--dashboard-forest);
+    font-family: var(--admin-serif);
+    font-size: clamp(20px, 2vw, 27px);
+    font-weight: 600;
+}
+
+.admin-taxonomy-page .admin-taxonomy-toolbar h2 span {
+    display: inline-grid;
+    min-width: 27px;
+    height: 24px;
+    place-items: center;
+    padding: 0 7px;
+    border: 1px solid rgba(197, 161, 90, .32);
+    background: rgba(197, 161, 90, .12);
+    color: #775f31;
+    font-family: var(--admin-sans);
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.admin-taxonomy-page .admin-taxonomy-toolbar > div > p:last-child {
+    margin: 8px 0 0;
+    color: var(--dashboard-muted);
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.admin-taxonomy-page .admin-taxonomy-button {
+    min-height: 39px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 15px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 700;
+    transition: transform .18s ease, background .18s ease, border-color .18s ease;
+}
+
+.admin-taxonomy-page .admin-taxonomy-button:hover:not(:disabled) {
+    transform: translateY(-1px);
+}
+
+.admin-taxonomy-page .admin-taxonomy-button:focus-visible,
+.admin-taxonomy-page .admin-taxonomy-link-button:focus-visible,
+.admin-taxonomy-page .admin-taxonomy-dialog-close:focus-visible {
+    outline: 2px solid var(--dashboard-gold);
+    outline-offset: 3px;
+}
+
+.admin-taxonomy-page .admin-taxonomy-button:disabled {
+    cursor: not-allowed;
+    opacity: .48;
+}
+
+.admin-taxonomy-page .admin-taxonomy-button-primary {
+    background: var(--dashboard-forest);
+    color: #fffdf8;
+}
+
+.admin-taxonomy-page .admin-taxonomy-button-primary:hover:not(:disabled) {
+    background: #2d5542;
+}
+
+.admin-taxonomy-page .admin-taxonomy-button-primary > span {
+    color: #e2c47f;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.admin-taxonomy-page .admin-taxonomy-button-filter {
+    min-height: 36px;
+    background: rgba(37, 72, 56, .08);
+    color: var(--dashboard-forest);
+}
+
+.admin-taxonomy-page .admin-taxonomy-button-filter:hover {
+    background: rgba(37, 72, 56, .15);
+}
+
+.admin-taxonomy-page .admin-taxonomy-button-muted {
+    border-color: var(--dashboard-line);
+    background: transparent;
+    color: var(--dashboard-muted);
+}
+
+.admin-taxonomy-page .admin-taxonomy-filters {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid rgba(41, 40, 32, .09);
+    background: rgba(245, 239, 224, .52);
+}
+
+.admin-taxonomy-page .admin-taxonomy-search {
+    min-width: 220px;
+    min-height: 36px;
+    display: flex;
+    flex: 1 1 420px;
+    align-items: center;
+    gap: 9px;
+    padding: 0 11px;
+    border: 1px solid var(--dashboard-line);
+    background: #fffdf8;
+    color: #9c824d;
+}
+
+.admin-taxonomy-page .admin-taxonomy-search > span {
+    font-family: var(--admin-serif);
+    font-size: 18px;
+}
+
+.admin-taxonomy-page .admin-taxonomy-search input,
+.admin-taxonomy-page .admin-taxonomy-select select {
+    width: 100%;
+    min-height: 34px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--dashboard-ink);
+    font-size: 10px;
+}
+
+.admin-taxonomy-page .admin-taxonomy-search:focus-within,
+.admin-taxonomy-page .admin-taxonomy-select:focus-within {
+    border-color: rgba(37, 72, 56, .45);
+    box-shadow: 0 0 0 3px rgba(37, 72, 56, .07);
+}
+
+.admin-taxonomy-page .admin-taxonomy-select {
+    min-width: 145px;
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    padding: 0 8px 0 11px;
+    border: 1px solid var(--dashboard-line);
+    background: #fffdf8;
+}
+
+.admin-taxonomy-page .admin-taxonomy-reset {
+    border: 0;
+    background: none;
+    cursor: pointer;
+    padding: 0 4px;
+    color: var(--dashboard-terracotta);
+    font-size: 9px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.admin-taxonomy-page .admin-taxonomy-table-wrap {
+    overflow: auto;
+    border: 1px solid var(--dashboard-line);
+    background: #fffdf8;
+}
+
+.admin-taxonomy-page .admin-taxonomy-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.admin-taxonomy-page .admin-taxonomy-table th {
+    padding: 12px 13px;
+    border-bottom: 1px solid var(--dashboard-line);
+    background: rgba(37, 72, 56, .055);
+    color: var(--dashboard-muted);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.admin-taxonomy-page .admin-taxonomy-table td {
+    padding: 13px;
+    border-bottom: 1px solid rgba(41, 40, 32, .075);
+    color: #565449;
+    font-size: 10px;
+    line-height: 1.55;
+    vertical-align: middle;
+}
+
+.admin-taxonomy-page .admin-taxonomy-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.admin-taxonomy-page .admin-taxonomy-record-mark {
+    width: 28px;
+    height: 28px;
+    display: inline-grid;
+    float: left;
+    place-items: center;
+    margin-right: 9px;
+    border: 1px solid rgba(197, 161, 90, .28);
+    background: rgba(197, 161, 90, .1);
+    color: #8a6c34;
+    font-family: var(--admin-serif);
+    font-size: 15px;
+}
+
+.admin-taxonomy-page .admin-taxonomy-record-mark.is-category {
+    border-color: rgba(166, 83, 60, .2);
+    background: rgba(166, 83, 60, .07);
+    color: var(--dashboard-terracotta);
+}
+
+.admin-taxonomy-page .admin-taxonomy-record-name {
+    display: inline-block;
+    padding-top: 6px;
+    color: var(--dashboard-forest);
+    font-family: var(--admin-serif);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.admin-taxonomy-page .admin-taxonomy-table code {
+    color: #75633f;
+    font-size: 9px;
+    overflow-wrap: anywhere;
+}
+
+.admin-taxonomy-page .admin-taxonomy-type {
+    color: var(--dashboard-muted);
+    text-transform: capitalize;
+}
+
+.admin-taxonomy-page .admin-taxonomy-description {
+    max-width: 340px;
+    color: var(--dashboard-muted) !important;
+}
+
+.admin-taxonomy-page .admin-taxonomy-count {
+    color: var(--dashboard-forest);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.admin-taxonomy-page .admin-taxonomy-unavailable {
+    color: #938e82;
+    font-size: 9px;
+    font-style: italic;
+}
+
+.admin-taxonomy-page .admin-taxonomy-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 8px;
+    border: 1px solid transparent;
+    font-size: 9px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.admin-taxonomy-page .admin-taxonomy-status > span {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+.admin-taxonomy-page .admin-taxonomy-status.is-active {
+    border-color: rgba(37, 72, 56, .18);
+    background: rgba(37, 72, 56, .07);
+    color: var(--dashboard-forest);
+}
+
+.admin-taxonomy-page .admin-taxonomy-status.is-inactive {
+    border-color: rgba(166, 83, 60, .18);
+    background: rgba(166, 83, 60, .07);
+    color: #914934;
+}
+
+.admin-taxonomy-page .admin-taxonomy-row-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+}
+
+.admin-taxonomy-page .admin-taxonomy-row-actions form {
+    display: inline;
+}
+
+.admin-taxonomy-page .admin-taxonomy-link-button {
+    padding: 3px 0;
+    border: 0;
+    background: none;
+    color: var(--dashboard-forest);
+    cursor: pointer;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.admin-taxonomy-page .admin-taxonomy-link-button:hover:not(:disabled) {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.admin-taxonomy-page .admin-taxonomy-link-button.is-danger {
+    color: var(--dashboard-terracotta);
+}
+
+.admin-taxonomy-page .admin-taxonomy-link-button.is-restore {
+    color: var(--dashboard-forest);
+}
+
+.admin-taxonomy-page .admin-taxonomy-link-button:disabled {
+    cursor: not-allowed;
+    opacity: .45;
+}
+
+.admin-taxonomy-page .admin-taxonomy-empty {
+    padding: 58px 18px !important;
+    text-align: center;
+}
+
+.admin-taxonomy-page .admin-taxonomy-empty > span,
+.admin-taxonomy-page .admin-taxonomy-empty > strong,
+.admin-taxonomy-page .admin-taxonomy-empty > small {
+    display: block;
+}
+
+.admin-taxonomy-page .admin-taxonomy-empty > span {
+    margin-bottom: 10px;
+    color: #a68a51;
+    font-family: var(--admin-serif);
+    font-size: 26px;
+}
+
+.admin-taxonomy-page .admin-taxonomy-empty > strong {
+    color: var(--dashboard-forest);
+    font-family: var(--admin-serif);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.admin-taxonomy-page .admin-taxonomy-empty > small {
+    margin-top: 6px;
+    color: var(--dashboard-muted);
+    font-size: 9px;
+}
+
+.admin-taxonomy-page .admin-taxonomy-pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 19px;
+}
+
+.admin-taxonomy-page .admin-taxonomy-pagination nav > div:first-child {
+    margin-bottom: 9px;
+    color: var(--dashboard-muted);
+    font-size: 9px;
+    text-align: center;
+}
+
+.admin-taxonomy-page .admin-taxonomy-pagination nav > div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.admin-taxonomy-page .admin-taxonomy-page-summary {
+    align-self: center;
+    margin-right: 8px;
+    color: var(--dashboard-muted);
+    font-size: 9px;
+}
+
+.admin-taxonomy-page .admin-taxonomy-page-link,
+.admin-taxonomy-page .admin-taxonomy-page-current {
+    min-width: 34px;
+    min-height: 34px;
+    display: inline-grid;
+    place-items: center;
+    padding: 0 9px;
+    border: 1px solid var(--dashboard-line);
+    background: #fffdf8;
+    color: var(--dashboard-forest);
+    font-size: 9px;
+}
+
+.admin-taxonomy-page .admin-taxonomy-page-link:hover {
+    border-color: var(--dashboard-forest);
+    background: var(--dashboard-forest);
+    color: white;
+}
+
+.admin-taxonomy-page .admin-taxonomy-page-link[aria-disabled="true"] {
+    color: #aaa597;
+}
+
+.admin-taxonomy-page .admin-taxonomy-page-current {
+    color: var(--dashboard-muted);
+}
+
+.admin-taxonomy-page .admin-taxonomy-feedback {
+    position: fixed;
+    z-index: 40;
+    right: 24px;
+    bottom: 24px;
+    max-width: min(440px, calc(100vw - 32px));
+    padding: 13px 17px;
+    border: 1px solid rgba(37, 72, 56, .2);
+    background: #fffdf8;
+    color: var(--dashboard-forest);
+    box-shadow: 0 12px 36px rgba(25, 56, 45, .16);
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.admin-taxonomy-page .admin-taxonomy-feedback.is-error {
+    border-color: rgba(166, 83, 60, .28);
+    color: var(--dashboard-terracotta);
+}
+
+.admin-taxonomy-page .admin-taxonomy-pagination a,
+.admin-taxonomy-page .admin-taxonomy-pagination span[aria-current="page"] span,
+.admin-taxonomy-page .admin-taxonomy-pagination span[aria-disabled="true"] span {
+    min-width: 34px;
+    min-height: 34px;
+    display: inline-grid;
+    place-items: center;
+    padding: 0 9px;
+    border: 1px solid var(--dashboard-line);
+    background: #fffdf8;
+    color: var(--dashboard-forest);
+    font-size: 9px;
+}
+
+.admin-taxonomy-page .admin-taxonomy-pagination a:hover,
+.admin-taxonomy-page .admin-taxonomy-pagination span[aria-current="page"] span {
+    border-color: var(--dashboard-forest);
+    background: var(--dashboard-forest);
+    color: white;
+}
+
+.admin-taxonomy-page .admin-taxonomy-dialog {
+    width: min(590px, calc(100% - 32px));
+    max-height: min(90vh, 760px);
+    padding: 0;
+    overflow: auto;
+    border: 1px solid rgba(197, 161, 90, .42);
+    background: var(--dashboard-paper);
+    color: var(--dashboard-ink);
+    box-shadow: 0 25px 90px rgba(25, 56, 45, .28);
+}
+
+.admin-taxonomy-page .admin-taxonomy-dialog::backdrop {
+    background: rgba(17, 35, 28, .58);
+    backdrop-filter: blur(3px);
+}
+
+.admin-taxonomy-page .admin-taxonomy-dialog form {
+    padding: 25px;
+}
+
+.admin-taxonomy-page .admin-taxonomy-dialog-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 21px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid var(--dashboard-line);
+}
+
+.admin-taxonomy-page .admin-taxonomy-dialog-heading .admin-eyebrow {
+    margin: 0 0 7px;
+}
+
+.admin-taxonomy-page .admin-taxonomy-dialog-heading h2 {
+    margin: 0;
+    color: var(--dashboard-forest);
+    font-family: var(--admin-serif);
+    font-size: 23px;
+}
+
+.admin-taxonomy-page .admin-taxonomy-dialog-close {
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--dashboard-line);
+    background: transparent;
+    color: var(--dashboard-muted);
+    cursor: pointer;
+    font-family: var(--admin-serif);
+    font-size: 20px;
+    line-height: 1;
+}
+
+.admin-taxonomy-page .admin-taxonomy-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.admin-taxonomy-page .admin-taxonomy-form-grid > label:not(.admin-taxonomy-checkbox) {
+    display: grid;
+    gap: 7px;
+    color: var(--dashboard-forest);
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.admin-taxonomy-page .admin-taxonomy-form-grid > label.is-wide {
+    grid-column: 1 / -1;
+}
+
+.admin-taxonomy-page .admin-taxonomy-form-grid input:not([type="checkbox"]),
+.admin-taxonomy-page .admin-taxonomy-form-grid textarea {
+    width: 100%;
+    min-height: 40px;
+    padding: 10px 11px;
+    border: 1px solid var(--dashboard-line);
+    border-radius: 0;
+    background: #fffefb;
+    color: var(--dashboard-ink);
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.admin-taxonomy-page .admin-taxonomy-form-grid textarea {
+    min-height: 105px;
+    resize: vertical;
+}
+
+.admin-taxonomy-page .admin-taxonomy-form-grid input:focus,
+.admin-taxonomy-page .admin-taxonomy-form-grid textarea:focus {
+    outline: 2px solid rgba(37, 72, 56, .18);
+    border-color: var(--dashboard-forest-soft);
+}
+
+.admin-taxonomy-page .admin-taxonomy-checkbox {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: var(--dashboard-forest);
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.admin-taxonomy-page .admin-taxonomy-checkbox input {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--dashboard-forest);
+}
+
+.admin-taxonomy-page .admin-taxonomy-form-contract {
+    margin: 18px 0 0;
+    padding: 10px 12px;
+    border-left: 2px solid var(--dashboard-gold);
+    background: rgba(197, 161, 90, .08);
+    color: var(--dashboard-muted);
+    font-size: 9px;
+    line-height: 1.6;
+}
+
+.admin-taxonomy-page .admin-taxonomy-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 9px;
+    margin-top: 22px;
+    padding-top: 17px;
+    border-top: 1px solid var(--dashboard-line);
+}
+
+@media (max-width: 900px) {
+    .admin-taxonomy-page .admin-taxonomy-description {
+        max-width: 230px;
+    }
+
+    .admin-taxonomy-page .admin-taxonomy-workspace {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 680px) {
+    .admin-taxonomy-page .admin-taxonomy-toolbar {
+        align-items: flex-start;
+    }
+
+    .admin-taxonomy-page .admin-taxonomy-filters {
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    .admin-taxonomy-page .admin-taxonomy-search {
+        flex-basis: 100%;
+    }
+
+    .admin-taxonomy-page .admin-taxonomy-select {
+        flex: 1;
+    }
+
+    .admin-taxonomy-page .admin-taxonomy-table thead {
+        display: none;
+    }
+
+    .admin-taxonomy-page .admin-taxonomy-table,
+    .admin-taxonomy-page .admin-taxonomy-table tbody,
+    .admin-taxonomy-page .admin-taxonomy-table tr,
+    .admin-taxonomy-page .admin-taxonomy-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .admin-taxonomy-page .admin-taxonomy-table tbody tr {
+        padding: 9px 13px;
+        border-bottom: 1px solid var(--dashboard-line);
+    }
+
+    .admin-taxonomy-page .admin-taxonomy-table tbody tr:last-child {
+        border-bottom: 0;
+    }
+
+    .admin-taxonomy-page .admin-taxonomy-table td {
+        display: grid;
+        grid-template-columns: minmax(100px, 34%) minmax(0, 1fr);
+        align-items: center;
+        gap: 10px;
+        padding: 8px 0;
+        border: 0;
+        text-align: left;
+    }
+
+    .admin-taxonomy-page .admin-taxonomy-table td::before {
+        content: attr(data-label);
+        color: var(--dashboard-muted);
+        font-size: 8px;
+        font-weight: 700;
+        letter-spacing: .04em;
+        text-transform: uppercase;
+    }
+
+    .admin-taxonomy-page .admin-taxonomy-table td.admin-taxonomy-empty {
+        display: block;
+        padding: 35px 10px !important;
+        text-align: center;
+    }
+
+    .admin-taxonomy-page .admin-taxonomy-table td.admin-taxonomy-empty::before {
+        content: none;
+    }
+
+    .admin-taxonomy-page .admin-taxonomy-description {
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-taxonomy-page .admin-taxonomy-workspace {
+        padding: 14px;
+    }
+
+    .admin-taxonomy-page .admin-taxonomy-toolbar {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .admin-taxonomy-page .admin-taxonomy-toolbar > .admin-taxonomy-button {
+        width: 100%;
+    }
+
+    .admin-taxonomy-page .admin-taxonomy-select,
+    .admin-taxonomy-page .admin-taxonomy-button-filter {
+        min-width: 0;
+        flex: 1 1 100%;
+    }
+
+    .admin-taxonomy-page .admin-taxonomy-dialog form {
+        padding: 19px;
+    }
+
+    .admin-taxonomy-page .admin-taxonomy-form-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .admin-taxonomy-page .admin-taxonomy-form-grid > label.is-wide {
+        grid-column: auto;
+    }
+
+    .admin-taxonomy-page .admin-taxonomy-dialog-actions {
+        flex-direction: column-reverse;
+    }
+
+    .admin-taxonomy-page .admin-taxonomy-dialog-actions .admin-taxonomy-button {
+        width: 100%;
+    }
+}

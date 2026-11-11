@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="660" viewBox="0 0 500 660" role="img" aria-labelledby="title">
+  <title id="title">WARNA BUDAYA — Jaga Budaya, Lestarikan Negeri</title>
+  <image href="brand-emblem.svg" x="50" y="18" width="400" height="400"/>
+  <text x="250" y="478" text-anchor="middle" fill="#19382d" font-family="Georgia, 'Times New Roman', serif" font-size="49" font-weight="700" letter-spacing="2">WARNA</text>
+  <text x="250" y="538" text-anchor="middle" fill="#19382d" font-family="Georgia, 'Times New Roman', serif" font-size="49" font-weight="700" letter-spacing="2">BUDAYA</text>
+  <path d="M92 566h316" stroke="#c7a65a" stroke-width="2"/>
+  <text x="250" y="602" text-anchor="middle" fill="#4d554c" font-family="Arial, sans-serif" font-size="17" letter-spacing=".6">Jaga Budaya, Lestarikan Negeri</text>
+</svg>

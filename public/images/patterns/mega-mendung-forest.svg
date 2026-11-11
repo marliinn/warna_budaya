@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="210" viewBox="0 0 360 210" fill="none">
+  <defs>
+    <path id="cloud" d="M-25 74c21 0 27-9 37-19 11-11 24-11 30-3 6 8 1 17-7 18-7 1-10-7-5-11 4-3 8 1 6 4 11 5 20-2 26-11 7-11 19-16 29-10 10 5 11 17 2 22-7 4-14-2-10-8 3-4 8-2 7 2 11 3 19-6 25-16 6-11 18-14 27-8 9 6 9 17 0 21-7 3-13-3-9-8 3-4 8-1 6 3 11 3 19-7 25-17 6-10 18-12 27-5 8 6 7 17-2 20-7 2-12-4-7-9 3-3 8 0 6 4 12 1 20-8 25-18 5-10 17-11 25-4 7 6 5 17-4 19-7 1-11-5-6-9 4-3 8 1 5 4 15 0 20-10 37-10v36c-16 0-23-8-35-9-9-1-15 4-15 10 0 7 9 10 13 5 3-4-2-7-5-4-7-4-4-12 4-13 9-1 15 8 12 17-3 9-15 14-24 8-9-6-10-17-1-22 8-4 15 2 10 8-3 4-8 2-7-2-12-3-20 7-26 16-6 10-18 12-27 6-9-6-8-17 1-21 7-3 13 3 9 8-3 4-8 1-6-3-11-2-20 7-26 17-7 10-19 12-28 5-8-6-7-17 2-20 7-2 12 4 7 9-3 3-8 0-6-4-11-1-19 8-25 18-6 10-18 11-26 4-7-6-5-17 4-19 7-1 11 5 6 9-4 3-8-1-5-4-14 0-22 10-39 10z"/>
+  </defs>
+  <g opacity=".34" stroke-linecap="round" stroke-linejoin="round">
+    <use href="#cloud" stroke="#d0ad67" stroke-width="8"/>
+    <use href="#cloud" stroke="#2d7780" stroke-width="5"/>
+    <use href="#cloud" stroke="#729da0" stroke-width="2"/>
+    <use href="#cloud" transform="translate(-116 108) scale(.72)" stroke="#d0ad67" stroke-width="8"/>
+    <use href="#cloud" transform="translate(-116 108) scale(.72)" stroke="#2d7780" stroke-width="5"/>
+    <use href="#cloud" transform="translate(-116 108) scale(.72)" stroke="#729da0" stroke-width="2"/>
+  </g>
+</svg>

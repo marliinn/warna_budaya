@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1000" viewBox="0 0 1440 1000" role="img" aria-labelledby="title description">
+  <title id="title">Preview konsep identitas WARNA BUDAYA</title>
+  <desc id="description">Lembar konsep logo dengan emblem lingkaran, globe bermotif, buku, gulungan, lampu, ornamen geometris, serta palet teal, oranye, merah, magenta, ungu, dan emas.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#122d2d"/>
+      <stop offset=".52" stop-color="#222b36"/>
+      <stop offset="1" stop-color="#3b2637"/>
+    </linearGradient>
+    <linearGradient id="spectrum" x1="0" y1="1" x2="1" y2="0">
+      <stop stop-color="#167e79"/>
+      <stop offset=".28" stop-color="#ee8a3d"/>
+      <stop offset=".52" stop-color="#d94b4c"/>
+      <stop offset=".75" stop-color="#b44483"/>
+      <stop offset="1" stop-color="#594d9c"/>
+    </linearGradient>
+    <linearGradient id="inner" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#176f69"/>
+      <stop offset=".5" stop-color="#344b55"/>
+      <stop offset="1" stop-color="#7c315d"/>
+    </linearGradient>
+    <linearGradient id="wordmark" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#fff5df"/>
+      <stop offset="1" stop-color="#f2d18a"/>
+    </linearGradient>
+    <pattern id="textile" width="46" height="46" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <path d="M23 2 44 23 23 44 2 23Z" fill="none" stroke="#f4cf82" stroke-width="2" opacity=".8"/>
+      <path d="M23 11 35 23 23 35 11 23Z" fill="none" stroke="#f28a52" stroke-width="2" opacity=".9"/>
+      <circle cx="23" cy="23" r="3" fill="#f8dfa2"/>
+    </pattern>
+    <filter id="shadow" x="-.3" y="-.3" width="1.6" height="1.6">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#080f18" flood-opacity=".5"/>
+    </filter>
+    <g id="flower" fill="none" stroke="#f4d28e" stroke-width="3" stroke-linecap="round">
+      <path d="M0-26C-8-16-8-8 0 0 8-8 8-16 0-26Z"/>
+      <path d="M26 0C16-8 8-8 0 0 8 8 16 8 26 0Z"/>
+      <path d="M0 26C8 16 8 8 0 0-8 8-8 16 0 26Z"/>
+      <path d="M-26 0C-16 8-8 8 0 0-8-8-16-8-26 0Z"/>
+      <circle r="4" fill="#f4d28e"/>
+    </g>
+    <g id="emblem">
+      <circle r="190" fill="#121d28" opacity=".7"/>
+      <circle r="184" fill="url(#spectrum)" stroke="#f5d894" stroke-width="3"/>
+      <circle r="166" fill="url(#textile)" opacity=".92"/>
+      <circle r="142" fill="#122d34" stroke="#f8e6b7" stroke-width="5"/>
+      <circle r="132" fill="url(#inner)" stroke="#d7b76c" stroke-width="2"/>
+      <circle r="108" fill="#152e3b" stroke="#f5d894" stroke-width="2"/>
+      <path d="M-104 0H104M0-104V104M-76-76 76 76M76-76-76 76" fill="none" stroke="#e8c879" stroke-width="2" opacity=".75"/>
+      <ellipse rx="46" ry="104" fill="none" stroke="#f0d99f" stroke-width="2"/>
+      <ellipse rx="82" ry="104" fill="none" stroke="#e8bd71" stroke-width="2"/>
+      <ellipse rx="104" ry="42" fill="none" stroke="#f0d99f" stroke-width="2"/>
+      <ellipse rx="104" ry="78" fill="none" stroke="#e8bd71" stroke-width="2"/>
+      <path d="M-92-51-70-68-51-48-70-29ZM92-51 70-68 51-48 70-29ZM-92 51-70 68-51 48-70 29ZM92 51 70 68 51 48 70 29Z" fill="url(#spectrum)" stroke="#f3d48f" stroke-width="2"/>
+      <circle r="9" fill="#f3d48f"/>
+      <g transform="translate(0 -128)" fill="#f7e9c2" stroke="#f7e9c2" stroke-linejoin="round">
+        <path d="M-31-8Q-15-16 0-5Q15-16 31-8V17Q15 9 0 19Q-15 9-31 17Z" fill="#f6e5bb" stroke-width="2"/>
+        <path d="M0-5V18" fill="none" stroke="#8b4b55" stroke-width="2"/>
+        <path d="M-24-2-7 2M-24 5-7 9M24-2 7 2M24 5 7 9" fill="none" stroke="#8b4b55" stroke-width="2"/>
+      </g>
+      <g transform="translate(-124 16)" fill="none" stroke="#f6df9e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M-9-21h22v37H-9zM-3-13h10M-3-5h10M-3 3h7"/>
+        <circle cx="17" cy="-10" r="7"/>
+        <path d="M-2 21h16"/>
+      </g>
+      <g transform="translate(124 14)" fill="none" stroke="#ffe59a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M-15-7a15 15 0 1 1 30 0c0 8-8 11-8 19H-7c0-8-8-11-8-19Z"/>
+        <path d="M-7 18h14M-5 24h10M0-33v-8M-26-23l-6-6M26-23l6-6M-34 0h-8M34 0h8"/>
+      </g>
+      <use href="#flower" transform="translate(0 -173) scale(.7)"/>
+      <use href="#flower" transform="translate(173 0) scale(.7)"/>
+      <use href="#flower" transform="translate(0 173) scale(.7)"/>
+      <use href="#flower" transform="translate(-173 0) scale(.7)"/>
+    </g>
+  </defs>
+
+  <rect width="1440" height="1000" rx="34" fill="url(#background)"/>
+  <circle cx="1170" cy="130" r="220" fill="#c74b71" opacity=".08"/>
+  <circle cx="220" cy="810" r="300" fill="#24a89a" opacity=".08"/>
+  <path d="M72 92H1368" stroke="#f1d28c" stroke-opacity=".25"/>
+  <text x="84" y="70" fill="#eacb87" font-family="Arial, sans-serif" font-size="16" letter-spacing="5">WARNA BUDAYA · KONSEP IDENTITAS</text>
+
+  <g transform="translate(360 430)" filter="url(#shadow)">
+    <use href="#emblem"/>
+  </g>
+
+  <g transform="translate(640 336)">
+    <path d="M0 0h4v196H0z" fill="#e8c879" opacity=".65"/>
+    <text x="54" y="10" fill="#edcf8b" font-family="Arial, sans-serif" font-size="16" letter-spacing="5">KENALI · RAYAKAN · RAWAT</text>
+    <text x="48" y="112" fill="url(#wordmark)" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="700" letter-spacing="2">WARNA</text>
+    <text x="48" y="198" fill="#fff9ed" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="700" letter-spacing="2">BUDAYA</text>
+    <path d="M54 226H550" stroke="#d9b66f" stroke-width="2"/>
+    <text x="54" y="268" fill="#f1e4c8" font-family="Arial, sans-serif" font-size="23" letter-spacing="2">Jaga Budaya, Lestarikan Negeri</text>
+    <text x="54" y="324" fill="#e9e1d3" fill-opacity=".72" font-family="Arial, sans-serif" font-size="15" letter-spacing="1">Motif abstrak Nusantara · Pengetahuan · Keberagaman</text>
+  </g>
+
+  <path d="M84 708H1356" stroke="#f1d28c" stroke-opacity=".25"/>
+  <text x="84" y="754" fill="#eacb87" font-family="Arial, sans-serif" font-size="14" letter-spacing="4">VARIAN AWAL · BELUM DITERAPKAN DI WEBSITE</text>
+
+  <g transform="translate(275 870) scale(.27)">
+    <use href="#emblem"/>
+  </g>
+  <text x="275" y="962" fill="#fff4dd" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" letter-spacing="2">EMBLEM</text>
+
+  <g transform="translate(720 870) scale(.19)">
+    <use href="#emblem"/>
+  </g>
+  <text x="790" y="861" fill="#fff4dd" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700" letter-spacing="1">WARNA BUDAYA</text>
+  <text x="792" y="888" fill="#e9d8b8" font-family="Arial, sans-serif" font-size="12" letter-spacing="1">Jaga Budaya, Lestarikan Negeri</text>
+  <text x="790" y="962" fill="#fff4dd" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" letter-spacing="2">HORIZONTAL</text>
+
+  <g transform="translate(1190 826) scale(.16)">
+    <use href="#emblem"/>
+  </g>
+  <text x="1190" y="885" fill="#fff4dd" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-weight="700" letter-spacing="1">WARNA</text>
+  <text x="1190" y="908" fill="#fff4dd" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-weight="700" letter-spacing="1">BUDAYA</text>
+  <text x="1190" y="962" fill="#fff4dd" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" letter-spacing="2">VERTIKAL</text>
+</svg>

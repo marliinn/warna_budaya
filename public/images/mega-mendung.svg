@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="280" viewBox="0 0 420 280" fill="none">
+  <defs>
+    <pattern id="mega-mendung" width="420" height="280" patternUnits="userSpaceOnUse">
+      <g transform="translate(42 18)" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 151c-16-8-11-32 4-39 16-8 29 0 38 13-5-26 15-48 40-49 18 0 34 12 38 31 13-27 52-28 71-7 9 10 11 21 9 32 14-20 42-25 60-10 20 16 15 41 0 52-15 13-41 12-52 12H57c-17 0-33-12-37-27-1-3-1-6 0-8z" fill="#466f8a" fill-opacity=".08" stroke="#294d69" stroke-opacity=".16" stroke-width="2"/>
+        <path d="M33 150c-9-6-5-19 4-24 10-5 19 1 24 10 1-20 15-35 35-36 15 0 27 10 30 25 12-20 41-21 56-5 7 8 8 15 7 24 11-15 32-19 46-8 14 12 11 30 0 39-12 9-31 8-42 8H64c-14 0-25-9-29-20-2-5-2-9-2-13z" stroke="#416b84" stroke-opacity=".19" stroke-width="1.5"/>
+        <path d="M48 149c-5-5-2-12 4-15 7-3 13 1 17 7 3-14 14-24 28-24 11 0 20 7 23 18 9-14 29-15 39-4 5 5 6 11 5 16 8-10 22-13 32-5 10 8 8 20 0 26-8 6-22 6-31 6H74c-9 0-17-6-20-13-3-6-4-10-6-12z" stroke="#b48b4e" stroke-opacity=".22" stroke-width="1.25"/>
+        <path d="M66 146c-2-4 0-7 4-9 4-1 8 1 10 5 4-9 11-14 21-14 8 0 14 5 16 12 6-9 17-10 24-3 3 3 4 7 3 10 5-7 14-8 20-3 6 5 5 12 0 16-5 4-14 4-20 4H83c-6 0-11-4-13-8-2-4-3-7-4-10z" stroke="#294d69" stroke-opacity=".15" stroke-width="1"/>
+      </g>
+      <g transform="translate(270 167) scale(.43)" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 151c-16-8-11-32 4-39 16-8 29 0 38 13-5-26 15-48 40-49 18 0 34 12 38 31 13-27 52-28 71-7 9 10 11 21 9 32 14-20 42-25 60-10 20 16 15 41 0 52-15 13-41 12-52 12H57c-17 0-33-12-37-27-1-3-1-6 0-8z" fill="#5b8491" fill-opacity=".06" stroke="#294d69" stroke-opacity=".13" stroke-width="3"/>
+        <path d="M43 149c-7-5-4-15 3-19 8-4 15 0 19 7 2-17 13-29 30-29 12 0 22 8 25 20 10-17 34-18 47-4 5 6 7 12 6 19 9-12 26-16 38-7 12 10 10 25 0 32-10 8-26 7-35 7H69c-12 0-21-8-24-17-1-3-1-6-2-9z" stroke="#b48b4e" stroke-opacity=".18" stroke-width="2.5"/>
+      </g>
+    </pattern>
+  </defs>
+  <rect width="420" height="280" fill="url(#mega-mendung)"/>
+</svg>

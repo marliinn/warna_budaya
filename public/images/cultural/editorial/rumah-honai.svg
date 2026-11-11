@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title description">
+  <title id="title">Ilustrasi editorial Rumah Honai</title>
+  <desc id="description">Ilustrasi editorial rumah bundar berdinding kayu dengan atap jerami tebal, bukan foto dokumentasi autentik.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#213f52"/>
+      <stop offset=".52" stop-color="#477a70"/>
+      <stop offset="1" stop-color="#c2744d"/>
+    </linearGradient>
+    <linearGradient id="thatch" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0d596"/>
+      <stop offset=".5" stop-color="#d8a85f"/>
+      <stop offset="1" stop-color="#a96b45"/>
+    </linearGradient>
+    <linearGradient id="timber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8f5940"/>
+      <stop offset="1" stop-color="#533b34"/>
+    </linearGradient>
+    <pattern id="grain" width="38" height="38" patternUnits="userSpaceOnUse">
+      <path d="M0 19h38M19 0v38" stroke="#f4e3bf" stroke-width="1" opacity=".14"/>
+      <circle cx="19" cy="19" r="2" fill="#f4e3bf" opacity=".2"/>
+    </pattern>
+    <pattern id="wood" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M12 0v24" stroke="#e1b979" stroke-width="2" opacity=".35"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="url(#sky)"/>
+  <rect width="1200" height="900" fill="url(#grain)"/>
+  <circle cx="940" cy="150" r="78" fill="#f2d594" opacity=".9"/>
+  <circle cx="940" cy="150" r="115" fill="none" stroke="#f2d594" stroke-width="2" opacity=".35"/>
+  <path d="M0 570 138 493l131 65 139-119 116 84 127-96 139 102 121-83 128 63 161-91v482H0Z" fill="#315e58" opacity=".82"/>
+  <path d="M0 656q133-64 263-5t264 1 260-4 264 4 149-4v252H0Z" fill="#1d4745"/>
+  <path d="M0 742q180-39 346 2t314-2 326 0 214 8v150H0Z" fill="#173c3d"/>
+  <g transform="translate(600 485)">
+    <ellipse cx="0" cy="230" rx="290" ry="38" fill="#142f32" opacity=".48"/>
+    <path d="M-226 4v180q0 26 32 26h388q32 0 32-26V4Z" fill="url(#timber)" stroke="#4b3932" stroke-width="9"/>
+    <path d="M-226 4v180q0 26 32 26h388q32 0 32-26V4Z" fill="url(#wood)"/>
+    <path d="M-226 31h452" stroke="#e5c27d" stroke-width="8" opacity=".72"/>
+    <path d="M-215 80h430M-215 128h430M-215 176h430" stroke="#3d3531" stroke-width="4" opacity=".7"/>
+    <path d="M-92 210v-93q0-30 30-30h124q30 0 30 30v93Z" fill="#182f32" stroke="#d6b574" stroke-width="8"/>
+    <path d="M-92 174h184" stroke="#d6b574" stroke-width="5"/>
+    <path d="M-278 16C-270-142-182-246 0-274 182-246 270-142 278 16L237 37C222-99 154-179 0-203-154-179-222-99-237 37Z" fill="url(#thatch)" stroke="#72503a" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M-258-18q258-51 516 0M-239-74q239-51 478 0M-205-133q205-52 410 0M-153-185q153-45 306 0" fill="none" stroke="#f6e2ae" stroke-width="7" opacity=".48"/>
+    <path d="M-278 16Q0-29 278 16" fill="none" stroke="#f3d9a1" stroke-width="13"/>
+    <path d="M-226 19Q0-18 226 19" fill="none" stroke="#7d5139" stroke-width="5"/>
+    <g fill="#e1b974">
+      <circle cx="-192" cy="-2" r="6"/><circle cx="-144" cy="-9" r="6"/><circle cx="-96" cy="-14" r="6"/>
+      <circle cx="-48" cy="-18" r="6"/><circle cx="0" cy="-19" r="6"/><circle cx="48" cy="-18" r="6"/>
+      <circle cx="96" cy="-14" r="6"/><circle cx="144" cy="-9" r="6"/><circle cx="192" cy="-2" r="6"/>
+    </g>
+  </g>
+  <path d="M84 779h1032" stroke="#ebcf96" stroke-width="2" opacity=".55"/>
+  <text x="600" y="820" fill="#f6edda" text-anchor="middle" font-family="Georgia,serif" font-size="26" letter-spacing="5">RUMAH HONAI · ILUSTRASI EDITORIAL</text>
+  <text x="600" y="854" fill="#e2c99a" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" letter-spacing="2">RUMAH BUNDAR BERATAP JERAMI · BUKAN FOTO DOKUMENTASI</text>
+</svg>

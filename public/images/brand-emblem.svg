@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-labelledby="title description">
+  <title id="title">Emblem WARNA BUDAYA</title>
+  <desc id="description">Emblem lingkaran bergradasi dengan globe bermotif, buku, gulungan, lampu, dan ornamen floral emas.</desc>
+  <defs>
+    <linearGradient id="spectrum" x1="20" y1="360" x2="380" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#167e79"/>
+      <stop offset=".28" stop-color="#ee8a3d"/>
+      <stop offset=".52" stop-color="#d94b4c"/>
+      <stop offset=".75" stop-color="#b44483"/>
+      <stop offset="1" stop-color="#594d9c"/>
+    </linearGradient>
+    <linearGradient id="inner" x1="78" y1="95" x2="322" y2="305" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#176f69"/>
+      <stop offset=".5" stop-color="#344b55"/>
+      <stop offset="1" stop-color="#7c315d"/>
+    </linearGradient>
+    <pattern id="textile" width="46" height="46" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <path d="M23 2 44 23 23 44 2 23Z" fill="none" stroke="#f4cf82" stroke-width="2" opacity=".8"/>
+      <path d="M23 11 35 23 23 35 11 23Z" fill="none" stroke="#f28a52" stroke-width="2" opacity=".9"/>
+      <circle cx="23" cy="23" r="3" fill="#f8dfa2"/>
+    </pattern>
+    <g id="flower" fill="none" stroke="#f4d28e" stroke-width="3" stroke-linecap="round">
+      <path d="M0-26C-8-16-8-8 0 0 8-8 8-16 0-26Z"/>
+      <path d="M26 0C16-8 8-8 0 0 8 8 16 8 26 0Z"/>
+      <path d="M0 26C8 16 8 8 0 0-8 8-8 16 0 26Z"/>
+      <path d="M-26 0C-16 8-8 8 0 0-8-8-16-8-26 0Z"/>
+      <circle r="4" fill="#f4d28e"/>
+    </g>
+  </defs>
+  <g transform="translate(200 200)">
+    <circle r="190" fill="#121d28" opacity=".7"/>
+    <circle r="184" fill="url(#spectrum)" stroke="#f5d894" stroke-width="3"/>
+    <circle r="166" fill="url(#textile)" opacity=".92"/>
+    <circle r="142" fill="#122d34" stroke="#f8e6b7" stroke-width="5"/>
+    <circle r="132" fill="url(#inner)" stroke="#d7b76c" stroke-width="2"/>
+    <circle r="108" fill="#152e3b" stroke="#f5d894" stroke-width="2"/>
+    <path d="M-104 0H104M0-104V104M-76-76 76 76M76-76-76 76" fill="none" stroke="#e8c879" stroke-width="2" opacity=".75"/>
+    <ellipse rx="46" ry="104" fill="none" stroke="#f0d99f" stroke-width="2"/>
+    <ellipse rx="82" ry="104" fill="none" stroke="#e8bd71" stroke-width="2"/>
+    <ellipse rx="104" ry="42" fill="none" stroke="#f0d99f" stroke-width="2"/>
+    <ellipse rx="104" ry="78" fill="none" stroke="#e8bd71" stroke-width="2"/>
+    <path d="M-92-51-70-68-51-48-70-29ZM92-51 70-68 51-48 70-29ZM-92 51-70 68-51 48-70 29ZM92 51 70 68 51 48 70 29Z" fill="url(#spectrum)" stroke="#f3d48f" stroke-width="2"/>
+    <circle r="9" fill="#f3d48f"/>
+    <g transform="translate(0 -128)" fill="#f7e9c2" stroke="#f7e9c2" stroke-linejoin="round">
+      <path d="M-31-8Q-15-16 0-5Q15-16 31-8V17Q15 9 0 19Q-15 9-31 17Z" fill="#f6e5bb" stroke-width="2"/>
+      <path d="M0-5V18" fill="none" stroke="#8b4b55" stroke-width="2"/>
+      <path d="M-24-2-7 2M-24 5-7 9M24-2 7 2M24 5 7 9" fill="none" stroke="#8b4b55" stroke-width="2"/>
+    </g>
+    <g transform="translate(-124 16)" fill="none" stroke="#f6df9e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-9-21h22v37H-9zM-3-13h10M-3-5h10M-3 3h7"/>
+      <circle cx="17" cy="-10" r="7"/>
+      <path d="M-2 21h16"/>
+    </g>
+    <g transform="translate(124 14)" fill="none" stroke="#ffe59a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-15-7a15 15 0 1 1 30 0c0 8-8 11-8 19H-7c0-8-8-11-8-19Z"/>
+      <path d="M-7 18h14M-5 24h10M0-33v-8M-26-23l-6-6M26-23l6-6M-34 0h-8M34 0h8"/>
+    </g>
+    <use href="#flower" transform="translate(0 -173) scale(.7)"/>
+    <use href="#flower" transform="translate(173 0) scale(.7)"/>
+    <use href="#flower" transform="translate(0 173) scale(.7)"/>
+    <use href="#flower" transform="translate(-173 0) scale(.7)"/>
+  </g>
+</svg>

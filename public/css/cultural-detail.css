@@ -1,0 +1,676 @@
+.cultural-detail-page .cultural-detail-hero {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    background: var(--green-deep);
+    color: var(--ivory);
+}
+
+.cultural-detail-page .cultural-detail-hero::before,
+.cultural-detail-page .cultural-detail-hero::after {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    content: "";
+    pointer-events: none;
+}
+
+.cultural-detail-page .cultural-detail-hero::before {
+    opacity: .13;
+    background-image:
+        repeating-linear-gradient(132deg, transparent 0 42px, rgba(215, 179, 111, .55) 43px, transparent 44px 86px),
+        repeating-linear-gradient(48deg, transparent 0 68px, rgba(109, 157, 145, .38) 69px, transparent 70px 138px);
+    mask-image: linear-gradient(90deg, transparent, #000 35%, #000);
+}
+
+.cultural-detail-page .cultural-detail-hero::after {
+    background: linear-gradient(90deg, var(--green-deep), rgba(25, 56, 45, .78));
+}
+
+.cultural-detail-page .cultural-detail-hero-inner {
+    position: relative;
+    min-height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-block: 36px 68px;
+}
+
+.cultural-detail-page .cultural-detail-back {
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 42px;
+    color: rgba(245, 239, 227, .82);
+    font-size: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+.cultural-detail-page .cultural-detail-back:hover,
+.cultural-detail-page .cultural-detail-back:focus-visible {
+    color: #e2c47f;
+}
+
+.cultural-detail-page .cultural-detail-back span {
+    font-size: 16px;
+}
+
+.cultural-detail-page .cultural-detail-title-block {
+    max-width: 840px;
+}
+
+.cultural-detail-page .cultural-detail-title-block .eyebrow {
+    margin-bottom: 17px;
+}
+
+.cultural-detail-page .cultural-detail-region {
+    margin: 0 0 11px;
+    color: #e2c47f;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+
+.cultural-detail-page .cultural-detail-title-block h1 {
+    max-width: 780px;
+    margin: 0;
+    color: var(--ivory);
+    font-family: var(--serif);
+    font-size: clamp(42px, 6vw, 76px);
+    font-weight: 500;
+    letter-spacing: -.045em;
+    line-height: 1.08;
+}
+
+.cultural-detail-page .cultural-detail-local-name {
+    margin: 11px 0 0;
+    color: rgba(245, 239, 227, .75);
+    font-family: var(--serif);
+    font-size: 17px;
+    font-style: italic;
+}
+
+.cultural-detail-page .cultural-detail-intro {
+    max-width: 640px;
+    margin: 18px 0 0;
+    color: rgba(245, 239, 227, .8);
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+.cultural-detail-page .cultural-detail-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin: 19px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cultural-detail-page .cultural-detail-categories li {
+    padding: 6px 10px;
+    border: 1px solid rgba(215, 179, 111, .38);
+    border-radius: 999px;
+    color: #f0dfb8;
+    font-size: 9px;
+    line-height: 1.4;
+}
+
+.cultural-detail-page .cultural-detail-seal {
+    position: absolute;
+    right: max(8%, calc((100vw - 1240px) / 2));
+    bottom: 56px;
+    width: 96px;
+    height: 96px;
+    display: block;
+    object-fit: contain;
+}
+
+.cultural-detail-page .cultural-detail-seal::before {
+    content: none;
+}
+
+.cultural-detail-page .cultural-detail-main {
+    padding-block: 62px 76px;
+    background:
+        radial-gradient(ellipse at 92% 10%, rgba(197, 161, 90, .08), transparent 25%),
+        var(--paper);
+}
+
+.cultural-detail-page .cultural-detail-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 270px;
+    align-items: start;
+    gap: 52px;
+}
+
+.cultural-detail-page .cultural-detail-article {
+    min-width: 0;
+}
+
+.cultural-detail-page .cultural-detail-cover {
+    overflow: hidden;
+    margin: 0 0 42px;
+    border: 1px solid rgba(56, 46, 37, .13);
+    background: #e9e2d2;
+    box-shadow: 0 16px 38px rgba(34, 47, 37, .11);
+}
+
+.cultural-detail-page .cultural-detail-cover > img {
+    width: 100%;
+    max-height: 580px;
+    display: block;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.cultural-detail-page .cultural-detail-cover figcaption {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 6px 18px;
+    padding: 11px 15px;
+    color: #6d685d;
+    font-size: 9px;
+    line-height: 1.6;
+}
+
+.cultural-detail-page .cultural-detail-cover-credit {
+    color: #8a8477;
+}
+
+.cultural-detail-page .cultural-detail-cover-credit a,
+.cultural-detail-page .cultural-detail-gallery-item figcaption a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.cultural-detail-page .cultural-detail-cover-fallback {
+    min-height: 310px;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    padding: 32px;
+    background:
+        radial-gradient(ellipse at 50% 45%, transparent 0 17%, rgba(215, 179, 111, .2) 17.4% 18%, transparent 18.4% 29%, rgba(215, 179, 111, .14) 29.4% 30%, transparent 30.4%),
+        linear-gradient(135deg, #19382d, #315442);
+    color: rgba(245, 239, 227, .82);
+    text-align: center;
+}
+
+.cultural-detail-page .cultural-detail-fallback-seal {
+    width: 76px;
+    height: 76px;
+    object-fit: contain;
+}
+
+.cultural-detail-page .cultural-detail-cover-fallback p {
+    margin: 12px 0 5px;
+    color: var(--ivory);
+    font-family: var(--serif);
+    font-size: 20px;
+}
+
+.cultural-detail-page .cultural-detail-cover-fallback > span:last-child {
+    max-width: 390px;
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+.cultural-detail-page .cultural-detail-cover-fallback.has-editorial-illustration {
+    display: block;
+    min-height: 0;
+    padding: 0;
+    background: #19382d;
+    text-align: left;
+}
+
+.cultural-detail-page .cultural-detail-cover-fallback.has-editorial-illustration img {
+    display: block;
+    width: 100%;
+    max-height: 690px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.cultural-detail-page .cultural-detail-cover-fallback.has-editorial-illustration figcaption {
+    padding: 11px 16px;
+    color: rgba(245, 239, 227, .82);
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.cultural-detail-page .cultural-detail-section {
+    padding-block: 29px;
+    border-bottom: 1px solid rgba(37, 72, 56, .14);
+}
+
+.cultural-detail-page .cultural-detail-eyebrow {
+    margin: 0 0 10px;
+    color: var(--terracotta);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+
+.cultural-detail-page .cultural-detail-section h2,
+.cultural-detail-page .cultural-detail-facts h2,
+.cultural-detail-page .cultural-detail-related-heading h2 {
+    margin: 0 0 15px;
+    color: var(--green);
+    font-family: var(--serif);
+    font-size: clamp(24px, 3vw, 34px);
+    font-weight: 500;
+    letter-spacing: -.025em;
+    line-height: 1.2;
+}
+
+.cultural-detail-page .cultural-detail-prose {
+    color: #56564d;
+    font-size: 12px;
+    line-height: 1.95;
+    overflow-wrap: anywhere;
+}
+
+.cultural-detail-page .cultural-detail-keywords ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cultural-detail-page .cultural-detail-keywords li {
+    padding: 6px 10px;
+    border: 1px solid rgba(197, 161, 90, .32);
+    border-radius: 999px;
+    background: rgba(197, 161, 90, .09);
+    color: #71592d;
+    font-size: 9px;
+}
+
+.cultural-detail-page .cultural-detail-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.cultural-detail-page .cultural-detail-gallery-item {
+    min-width: 0;
+    overflow: hidden;
+    margin: 0;
+    border: 1px solid rgba(56, 46, 37, .13);
+    background: #fffdf8;
+}
+
+.cultural-detail-page .cultural-detail-gallery-item img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    display: block;
+    object-fit: cover;
+}
+
+.cultural-detail-page .cultural-detail-gallery-item figcaption {
+    display: grid;
+    gap: 4px;
+    padding: 10px 12px;
+    color: #6d685d;
+    font-size: 9px;
+    line-height: 1.55;
+}
+
+.cultural-detail-page .cultural-detail-gallery-item figcaption span + span {
+    color: #8a8477;
+}
+
+.cultural-detail-page .cultural-detail-source {
+    margin-top: 12px;
+    padding: 17px 18px;
+    border: 1px solid rgba(37, 72, 56, .13);
+    background: rgba(255, 253, 248, .78);
+}
+
+.cultural-detail-page .cultural-detail-source-type {
+    color: var(--terracotta);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.cultural-detail-page .cultural-detail-source h3 {
+    margin: 6px 0 7px;
+    color: var(--green);
+    font-family: var(--serif);
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.cultural-detail-page .cultural-detail-source p {
+    margin: 5px 0 0;
+    color: #716d62;
+    font-size: 10px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+.cultural-detail-page .cultural-detail-source a {
+    display: inline-flex;
+    gap: 8px;
+    margin-top: 11px;
+    color: var(--terracotta);
+    font-size: 10px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.cultural-detail-page .cultural-detail-source-empty {
+    margin: 0;
+    color: #716d62;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.cultural-detail-page .cultural-detail-facts {
+    position: sticky;
+    top: 24px;
+    padding: 22px 20px;
+    border: 1px solid rgba(56, 46, 37, .13);
+    background: #fffdf8;
+    box-shadow: 0 9px 26px rgba(34, 47, 37, .055);
+}
+
+.cultural-detail-page .cultural-detail-facts h2 {
+    margin-bottom: 18px;
+    font-size: 23px;
+}
+
+.cultural-detail-page .cultural-detail-facts dl {
+    margin: 0;
+}
+
+.cultural-detail-page .cultural-detail-facts dl > div {
+    padding: 12px 0;
+    border-top: 1px solid rgba(37, 72, 56, .12);
+}
+
+.cultural-detail-page .cultural-detail-facts dt {
+    margin-bottom: 5px;
+    color: #8a8477;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.cultural-detail-page .cultural-detail-facts dd {
+    margin: 0;
+    color: var(--green);
+    font-family: var(--serif);
+    font-size: 14px;
+    line-height: 1.55;
+    overflow-wrap: anywhere;
+}
+
+.cultural-detail-page .cultural-detail-facts > a {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 12px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(37, 72, 56, .12);
+    color: var(--terracotta);
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.cultural-detail-page .cultural-detail-related {
+    padding-block: 62px 72px;
+    background: #eee8d9;
+}
+
+.cultural-detail-page .cultural-detail-related-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.cultural-detail-page .cultural-detail-related-heading h2 {
+    margin-bottom: 0;
+}
+
+.cultural-detail-page .cultural-detail-related-heading > a {
+    flex: 0 0 auto;
+    color: var(--terracotta);
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.cultural-detail-page .cultural-detail-related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.cultural-detail-page .cultural-detail-related-card {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid rgba(56, 46, 37, .12);
+    background: #fffdf8;
+}
+
+.cultural-detail-page .cultural-detail-related-image {
+    height: 175px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, #19382d, #315442);
+    color: #d7b36f;
+    font-family: var(--serif);
+    font-size: 38px;
+    letter-spacing: .1em;
+}
+
+.cultural-detail-page .cultural-detail-related-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform .4s ease;
+}
+
+.cultural-detail-page .cultural-detail-related-image img[src$="brand-emblem.svg"] {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    transition: none;
+}
+
+.cultural-detail-page .cultural-detail-related-card:hover img {
+    transform: scale(1.035);
+}
+
+.cultural-detail-page .cultural-detail-related-card > div {
+    padding: 16px 17px 18px;
+}
+
+.cultural-detail-page .cultural-detail-related-card > div > p {
+    margin: 0 0 7px;
+    color: var(--terracotta);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.cultural-detail-page .cultural-detail-related-card h3 {
+    margin: 0;
+    color: var(--green);
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.cultural-detail-page .cultural-detail-related-card h3 a:hover,
+.cultural-detail-page .cultural-detail-related-card h3 a:focus-visible {
+    color: var(--terracotta);
+}
+
+.cultural-detail-page .cultural-detail-related-card > div > span {
+    display: -webkit-box;
+    overflow: hidden;
+    margin-top: 8px;
+    color: #706d63;
+    font-size: 10px;
+    line-height: 1.7;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+@media (max-width: 1000px) {
+    .cultural-detail-page .cultural-detail-layout {
+        grid-template-columns: minmax(0, 1fr) 235px;
+        gap: 30px;
+    }
+
+    .cultural-detail-page .cultural-detail-seal {
+        right: 6%;
+    }
+}
+
+@media (max-width: 760px) {
+    .cultural-detail-page .cultural-detail-hero-inner {
+        min-height: 390px;
+        padding-block: 28px 54px;
+    }
+
+    .cultural-detail-page .cultural-detail-back {
+        margin-bottom: 34px;
+    }
+
+    .cultural-detail-page .cultural-detail-title-block {
+        max-width: calc(100% - 65px);
+    }
+
+    .cultural-detail-page .cultural-detail-seal {
+        right: 28px;
+        bottom: 28px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .cultural-detail-page .cultural-detail-main {
+        padding-block: 38px 52px;
+    }
+
+    .cultural-detail-page .cultural-detail-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 26px;
+    }
+
+    .cultural-detail-page .cultural-detail-facts {
+        position: static;
+    }
+
+    .cultural-detail-page .cultural-detail-facts dl {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 18px;
+    }
+
+    .cultural-detail-page .cultural-detail-related-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .cultural-detail-page .cultural-detail-hero-inner {
+        min-height: 420px;
+        padding-block: 22px 44px;
+    }
+
+    .cultural-detail-page .cultural-detail-back {
+        margin-bottom: 28px;
+        font-size: 9px;
+    }
+
+    .cultural-detail-page .cultural-detail-title-block {
+        max-width: 100%;
+        padding-bottom: 64px;
+    }
+
+    .cultural-detail-page .cultural-detail-title-block h1 {
+        font-size: clamp(38px, 12vw, 54px);
+    }
+
+    .cultural-detail-page .cultural-detail-intro {
+        font-size: 11px;
+    }
+
+    .cultural-detail-page .cultural-detail-seal {
+        right: 24px;
+        bottom: 18px;
+    }
+
+    .cultural-detail-page .cultural-detail-cover {
+        margin-bottom: 26px;
+    }
+
+    .cultural-detail-page .cultural-detail-cover > img {
+        aspect-ratio: 4 / 3;
+    }
+
+    .cultural-detail-page .cultural-detail-cover-fallback {
+        min-height: 240px;
+        padding: 24px;
+    }
+
+    .cultural-detail-page .cultural-detail-section {
+        padding-block: 23px;
+    }
+
+    .cultural-detail-page .cultural-detail-prose {
+        font-size: 11px;
+    }
+
+    .cultural-detail-page .cultural-detail-gallery-grid,
+    .cultural-detail-page .cultural-detail-related-grid,
+    .cultural-detail-page .cultural-detail-facts dl {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .cultural-detail-page .cultural-detail-gallery-item img {
+        aspect-ratio: 16 / 10;
+    }
+
+    .cultural-detail-page .cultural-detail-related {
+        padding-block: 44px 52px;
+    }
+
+    .cultural-detail-page .cultural-detail-related-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .cultural-detail-page .cultural-detail-related-image {
+        height: 205px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cultural-detail-page .cultural-detail-back,
+    .cultural-detail-page .cultural-detail-related-image img {
+        transition: none;
+    }
+}

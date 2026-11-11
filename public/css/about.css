@@ -1,0 +1,157 @@
+.about-page {
+    --about-paper: #fbf8f1;
+    --about-ink: #292820;
+    --about-green: #254838;
+    --about-green-deep: #19382d;
+    --about-gold: #c5a15a;
+    --about-terracotta: #a6533c;
+    --about-muted: #716f65;
+    background: var(--about-paper);
+    color: var(--about-ink);
+}
+
+.about-page .about-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 82px 0 92px;
+    background: #f3eddf;
+}
+
+.about-page .about-hero-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+    align-items: center;
+    gap: 7%;
+}
+
+.about-page .about-hero-copy { max-width: 570px; }
+.about-page .about-eyebrow { display: flex; align-items: center; gap: 11px; margin: 0 0 22px; color: var(--about-terracotta); font-size: 10px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
+.about-page .about-eyebrow > span { width: 30px; height: 1px; background: currentColor; }
+.about-page .about-hero h1, .about-page .about-section-heading h2, .about-page .about-story-heading h2, .about-page .about-invitation h2 { margin: 0; font-family: var(--serif); font-size: clamp(42px, 5.2vw, 68px); font-weight: 500; letter-spacing: -.045em; line-height: 1.1; }
+.about-page .about-hero h1 em, .about-page .about-section-heading h2 em, .about-page .about-story-heading h2 em, .about-page .about-invitation h2 em { color: var(--about-terracotta); font-weight: 500; }
+.about-page .about-hero-lead { max-width: 440px; margin: 24px 0 30px; color: var(--about-muted); font-size: 14px; line-height: 1.9; }
+.about-page .about-button { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; gap: 23px; padding: 0 20px; border: 1px solid var(--about-green); background: var(--about-green); color: #fff; font-size: 11px; font-weight: 700; transition: background .2s ease, color .2s ease, transform .2s ease; }
+.about-page .about-button:hover { transform: translateY(-2px); background: transparent; color: var(--about-green); }
+.about-page .about-button span { font-size: 16px; }
+.about-page .about-hero-art { position: relative; min-height: 420px; }
+.about-page .about-hero-photo { position: absolute; overflow: hidden; margin: 0; box-shadow: 0 22px 55px rgba(37, 43, 31, .17); }
+.about-page .about-hero-photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.about-page .about-hero-photo-main { inset: 0 12% 8% 8%; }
+.about-page .about-hero-photo-main img { object-position: center; }
+.about-page .about-hero-photo-main figcaption { position: absolute; right: 0; bottom: 0; left: 0; padding: 32px 18px 17px; background: linear-gradient(transparent, rgba(20, 34, 27, .78)); color: #fff; font-family: var(--serif); font-size: 15px; }
+.about-page .about-hero-photo-detail { right: 0; bottom: 0; width: 34%; height: 42%; border: 7px solid #f3eddf; }
+.about-page .about-art-seal { position: absolute; top: 8%; right: 0; display: grid; width: 92px; height: 92px; place-content: center; border: 1px solid var(--about-gold); border-radius: 50%; background: var(--about-paper); color: var(--about-green); font-family: var(--serif); font-size: 10px; line-height: 1.5; letter-spacing: .12em; text-align: center; transform: rotate(9deg); }
+.about-page .about-hero-pattern { position: absolute; bottom: -100px; left: -60px; width: 360px; height: 210px; background: url("../images/patterns/mega-mendung-ivory.svg") center / contain no-repeat; opacity: .46; transform: rotate(18deg); }
+
+.about-page .about-section { padding: 105px 0; }
+.about-page .about-story { background: var(--about-paper); }
+.about-page .about-story-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 12%; }
+.about-page .about-story-heading h2 { max-width: 460px; font-size: clamp(36px, 4vw, 51px); }
+.about-page .about-story-copy { padding-top: 37px; color: var(--about-muted); font-size: 13px; line-height: 1.95; }
+.about-page .about-story-copy > p { margin: 0 0 17px; }
+.about-page .about-story-copy .about-story-intro { color: var(--about-ink); font-family: var(--serif); font-size: 24px; line-height: 1.5; }
+.about-page .about-story-note { display: flex; gap: 18px; align-items: flex-start; margin-top: 30px; padding: 20px 24px; border-left: 2px solid var(--about-gold); background: #f3eddf; }
+.about-page .about-note-mark { color: var(--about-terracotta); font-family: var(--serif); font-size: 43px; line-height: .9; }
+.about-page .about-story-note p { margin: 0; color: var(--about-green); font-family: var(--serif); font-size: 16px; line-height: 1.6; }
+
+.about-page .about-purpose { position: relative; overflow: hidden; background: #f3eddf; }
+.about-page .about-section-heading { max-width: 620px; }
+.about-page .about-section-heading h2 { font-size: clamp(38px, 4.7vw, 57px); }
+.about-page .about-purpose-grid { display: grid; grid-template-columns: .88fr 1.12fr; gap: 22px; margin-top: 45px; }
+.about-page .about-vision-card, .about-page .about-mission-card { position: relative; overflow: hidden; min-height: 390px; padding: 35px; }
+.about-page .about-vision-card { display: flex; flex-direction: column; align-items: flex-start; background: var(--about-green); color: #fff; }
+.about-page .about-card-index { position: relative; z-index: 1; color: var(--about-gold); font-size: 9px; font-weight: 700; letter-spacing: .19em; }
+.about-page .about-card-symbol { position: relative; z-index: 1; display: grid; width: 54px; height: 54px; margin-top: 46px; place-items: center; border: 1px solid rgba(197, 161, 90, .7); border-radius: 50%; color: var(--about-gold); font-size: 25px; }
+.about-page .about-vision-card h3 { position: relative; z-index: 1; max-width: 330px; margin: 22px 0 14px; font-family: var(--serif); font-size: 29px; font-weight: 500; line-height: 1.35; }
+.about-page .about-vision-card > p { position: relative; z-index: 1; max-width: 360px; margin: 0; color: rgba(255,255,255,.72); font-size: 11px; line-height: 1.9; }
+.about-page .about-vision-ornament { position: absolute; right: -80px; bottom: -128px; width: 285px; height: 365px; border: 1px solid rgba(197, 161, 90, .4); border-radius: 50%; transform: rotate(-37deg); }
+.about-page .about-vision-ornament::before, .about-page .about-vision-ornament::after { position: absolute; inset: 18px 35px; border: 1px solid rgba(197, 161, 90, .3); border-radius: 50%; content: ""; }
+.about-page .about-vision-ornament::after { inset: 42px 70px; }
+.about-page .about-mission-card { padding: 35px 38px; border: 1px solid rgba(41, 40, 32, .12); background: var(--about-paper); }
+.about-page .about-mission-card h3 { margin: 22px 0 22px; font-family: var(--serif); font-size: 25px; font-weight: 500; }
+.about-page .about-mission-list { margin: 0; padding: 0; list-style: none; }
+.about-page .about-mission-list li { display: grid; grid-template-columns: 35px 1fr; gap: 11px; align-items: start; padding: 13px 0; border-top: 1px solid rgba(41, 40, 32, .12); }
+.about-page .about-mission-list li > span { padding-top: 2px; color: var(--about-terracotta); font-family: var(--serif); font-size: 13px; }
+.about-page .about-mission-list p { margin: 0; color: var(--about-muted); font-size: 11px; line-height: 1.75; }
+
+.about-page .about-team { background: var(--about-paper); }
+.about-page .about-team-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; }
+.about-page .about-team-heading > p { max-width: 330px; margin: 0 0 7px; color: var(--about-muted); font-size: 12px; line-height: 1.8; }
+.about-page .about-team-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin-top: 42px; }
+.about-page .about-person-card { display: grid; grid-template-columns: 42% 1fr; min-height: 260px; overflow: hidden; border: 1px solid rgba(41, 40, 32, .12); background: #fffdf8; }
+.about-page .about-person-portrait { position: relative; display: grid; min-height: 260px; overflow: hidden; place-items: center; isolation: isolate; }
+.about-page .portrait-cornelius { background: radial-gradient(ellipse at 50% 30%, #e0cba3 0 19%, transparent 19.5%), linear-gradient(145deg, #d6bb84, #a6533c); }
+.about-page .portrait-icis { background: radial-gradient(ellipse at 50% 30%, #e4d8c6 0 19%, transparent 19.5%), linear-gradient(145deg, #9fb6a0, #254838); }
+.about-page .about-person-portrait::before { position: absolute; z-index: -1; inset: 11px; border: 1px solid rgba(255,255,255,.47); content: ""; }
+.about-page .about-person-portrait::after { position: absolute; z-index: -1; inset: 0; background: url("../images/patterns/mega-mendung-ivory.svg") center / 160% auto no-repeat; content: ""; opacity: .18; }
+.about-page .about-portrait-initials { position: absolute; top: 17px; left: 20px; color: rgba(255,255,255,.82); font-family: var(--serif); font-size: 12px; letter-spacing: .1em; }
+.about-page .about-person-portrait svg { position: absolute; bottom: 26px; width: 72%; max-width: 145px; fill: rgba(255,255,255,.8); stroke: rgba(255,255,255,.8); stroke-width: 2; }
+.about-page .about-person-portrait svg circle { stroke: none; }
+.about-page .about-person-portrait svg path { stroke: none; }
+.about-page .about-portrait-label { position: absolute; right: 14px; bottom: 14px; padding: 6px 9px; background: rgba(25, 56, 45, .78); color: #fff; font-size: 8px; letter-spacing: .08em; text-transform: uppercase; }
+.about-page .about-person-copy { align-self: center; padding: 25px 22px; }
+.about-page .about-person-role { color: var(--about-terracotta); font-size: 9px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.about-page .about-person-copy h3 { margin: 13px 0 4px; font-family: var(--serif); font-size: clamp(18px, 1.8vw, 23px); font-weight: 500; line-height: 1.3; }
+.about-page .about-person-nickname { margin: 0; color: var(--about-muted); font-family: var(--serif); font-size: 14px; font-style: italic; }
+.about-page .about-person-origin { display: flex; align-items: center; gap: 7px; margin: 20px 0 0; color: var(--about-muted); font-size: 10px; }
+.about-page .about-person-origin svg { width: 15px; height: 15px; fill: none; stroke: var(--about-terracotta); stroke-width: 1.4; }
+.about-page .about-person-origin svg circle { fill: var(--about-paper); }
+.about-page .about-team-note { margin: 18px 0 0; color: var(--about-muted); font-size: 10px; line-height: 1.7; }
+
+.about-page .about-invitation { overflow: hidden; background: var(--about-green-deep); color: #fff; }
+.about-page .about-invitation-inner { position: relative; z-index: 0; padding-top: 76px; padding-bottom: 78px; }
+.about-page .about-eyebrow-light { color: var(--about-gold); }
+.about-page .about-invitation h2 { position: relative; z-index: 1; max-width: 720px; font-size: clamp(38px, 5vw, 60px); }
+.about-page .about-invitation h2 em { color: var(--about-gold); }
+.about-page .about-invitation-inner > p:not(.about-eyebrow) { position: relative; z-index: 1; max-width: 440px; margin: 18px 0 24px; color: rgba(255,255,255,.72); font-size: 12px; line-height: 1.8; }
+.about-page .about-button-light { position: relative; z-index: 1; border-color: var(--about-gold); background: var(--about-gold); color: var(--about-green-deep); }
+.about-page .about-button-light:hover { background: transparent; color: #fff; }
+.about-page .about-invitation-pattern { position: absolute; z-index: -1; top: -40px; right: -35px; width: 380px; height: 230px; background: url("../images/patterns/mega-mendung-ivory.svg") center / contain no-repeat; opacity: .09; transform: rotate(-15deg); }
+
+@media (max-width: 900px) {
+    .about-page .about-hero-grid { gap: 4%; }
+    .about-page .about-hero-art { min-height: 360px; }
+    .about-page .about-story-grid { gap: 7%; }
+    .about-page .about-purpose-grid { grid-template-columns: 1fr 1.1fr; }
+    .about-page .about-person-card { grid-template-columns: 38% 1fr; }
+    .about-page .about-person-copy { padding: 20px 16px; }
+}
+
+@media (max-width: 700px) {
+    .about-page .about-hero { padding: 58px 0 65px; }
+    .about-page .about-hero-grid { grid-template-columns: 1fr; gap: 35px; }
+    .about-page .about-hero h1 { font-size: clamp(42px, 11vw, 58px); }
+    .about-page .about-hero-lead { font-size: 13px; }
+    .about-page .about-hero-art { min-height: clamp(290px, 76vw, 400px); }
+    .about-page .about-hero-photo-main { right: 9%; left: 4%; }
+    .about-page .about-hero-photo-detail { width: 36%; height: 40%; }
+    .about-page .about-art-seal { right: -3px; width: 77px; height: 77px; font-size: 8px; }
+    .about-page .about-section { padding: 70px 0; }
+    .about-page .about-story-grid, .about-page .about-purpose-grid { grid-template-columns: 1fr; gap: 24px; }
+    .about-page .about-story-copy { padding-top: 0; }
+    .about-page .about-story-copy .about-story-intro { font-size: 21px; }
+    .about-page .about-vision-card, .about-page .about-mission-card { min-height: 0; padding: 28px 25px; }
+    .about-page .about-card-symbol { margin-top: 34px; }
+    .about-page .about-vision-card h3 { font-size: 26px; }
+    .about-page .about-mission-card h3 { font-size: 22px; }
+    .about-page .about-team-heading { display: block; }
+    .about-page .about-team-heading > p { margin-top: 20px; }
+    .about-page .about-team-grid { grid-template-columns: 1fr; gap: 14px; margin-top: 28px; }
+    .about-page .about-person-card { grid-template-columns: minmax(120px, 38%) 1fr; min-height: 225px; }
+    .about-page .about-person-portrait { min-height: 225px; }
+    .about-page .about-person-copy h3 { font-size: 20px; }
+    .about-page .about-invitation-inner { padding-top: 60px; padding-bottom: 62px; }
+}
+
+@media (max-width: 420px) {
+    .about-page .about-person-card { grid-template-columns: 118px 1fr; }
+    .about-page .about-person-copy { padding: 18px 13px; }
+    .about-page .about-person-copy h3 { font-size: 18px; }
+    .about-page .about-person-origin { align-items: flex-start; line-height: 1.5; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .about-page .about-button { transition: none; }
+}
