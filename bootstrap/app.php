@@ -23,6 +23,7 @@ return Application::configure(basePath: dirname(__DIR__))
     ])
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->redirectGuestsTo(fn (): string => route('admin.login'));
+        $middleware->trustProxies(at: '*');
         $middleware->appendToGroup('web', TrackPublicAnalytics::class);
         $middleware->alias([
             'admin.access' => EnsureAdminAccess::class,

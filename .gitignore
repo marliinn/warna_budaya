@@ -5,5 +5,7 @@
 /vendor/
 /node_modules/
 /storage/*.key
-/storage/app/private/
-/-files .env
+/storage/app/private/*
+!/storage/app/private/cultural/
+*.sql
+
