@@ -1,3 +1,5 @@
+<?php
+
 if (! function_exists('mb_split')) {
     /**
      * Pengganti mb_split() untuk runtime PHP tanpa mbregex (Wasmer).
