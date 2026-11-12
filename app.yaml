@@ -10,7 +10,7 @@ scaling:
 env:
   APP_NAME: "WARNA BUDAYA"
   APP_ENV: production
-  APP_DEBUG: "true"
+  APP_DEBUG: "false"
   DB_CONNECTION: mysql
   SESSION_DRIVER: database
   CACHE_STORE: database
