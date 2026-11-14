@@ -80,9 +80,11 @@
 .about-page .about-team-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; }
 .about-page .about-team-heading > p { max-width: 330px; margin: 0 0 7px; color: var(--about-muted); font-size: 12px; line-height: 1.8; }
 .about-page .about-team-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin-top: 42px; }
+.about-page .about-team-grid .about-person-card:nth-child(odd):last-child { grid-column: 1 / -1; width: calc(50% - 11px); justify-self: center; }
 .about-page .about-person-card { display: grid; grid-template-columns: 42% 1fr; min-height: 260px; overflow: hidden; border: 1px solid rgba(41, 40, 32, .12); background: #fffdf8; }
 .about-page .about-person-portrait { position: relative; display: grid; min-height: 260px; overflow: hidden; place-items: center; isolation: isolate; }
 .about-page .portrait-cornelius { background: radial-gradient(ellipse at 50% 30%, #e0cba3 0 19%, transparent 19.5%), linear-gradient(145deg, #d6bb84, #a6533c); }
+.about-page .portrait-andrew { background: radial-gradient(ellipse at 50% 30%, #e6dcc8 0 19%, transparent 19.5%), linear-gradient(145deg, #c9a45c, #5b3b2c); }
 .about-page .portrait-icis { background: radial-gradient(ellipse at 50% 30%, #e4d8c6 0 19%, transparent 19.5%), linear-gradient(145deg, #9fb6a0, #254838); }
 .about-page .about-person-portrait::before { position: absolute; z-index: -1; inset: 11px; border: 1px solid rgba(255,255,255,.47); content: ""; }
 .about-page .about-person-portrait::after { position: absolute; z-index: -1; inset: 0; background: url("../images/patterns/mega-mendung-ivory.svg") center / 160% auto no-repeat; content: ""; opacity: .18; }
@@ -139,6 +141,7 @@
     .about-page .about-team-heading { display: block; }
     .about-page .about-team-heading > p { margin-top: 20px; }
     .about-page .about-team-grid { grid-template-columns: 1fr; gap: 14px; margin-top: 28px; }
+    .about-page .about-team-grid .about-person-card:nth-child(odd):last-child { grid-column: auto; width: auto; justify-self: stretch; }
     .about-page .about-person-card { grid-template-columns: minmax(120px, 38%) 1fr; min-height: 225px; }
     .about-page .about-person-portrait { min-height: 225px; }
     .about-page .about-person-copy h3 { font-size: 20px; }

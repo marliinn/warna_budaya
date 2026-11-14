@@ -17,7 +17,6 @@
                 <a class="navigation-link" href="{{ route('home') }}">Beranda</a>
                 <a class="navigation-link" href="{{ route('regions.index') }}">Jelajah Nusantara</a>
                 <a class="navigation-link" href="{{ route('cultural-map.index') }}">Peta Interaktif</a>
-                <a class="navigation-link" href="{{ route('home') }}#kategori">Kategori Budaya</a>
                 <a class="navigation-link" href="{{ route('cultural-entries.index') }}">Arsip Budaya</a>
                 <a class="navigation-link" href="{{ route('digital-books.index') }}">Cerita Nusantara</a>
                 <a class="navigation-link" href="{{ route('about') }}">Tentang Kami</a>

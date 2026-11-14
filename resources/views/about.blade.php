@@ -82,7 +82,7 @@
             <div class="about-team-heading">
                 <div class="about-section-heading">
                     <p class="about-eyebrow"><span aria-hidden="true"></span> Di balik WARNA BUDAYA</p>
-                    <h2 id="team-title">Dua langkah, satu <em>semangat.</em></h2>
+                    <h2 id="team-title">Tiga langkah, satu <em>semangat.</em></h2>
                 </div>
                 <p>Berkenalan dengan para pengembang yang percaya bahwa cerita budaya layak mendapat ruang di dunia digital.</p>
             </div>
@@ -111,6 +111,17 @@
                         <h3>Istiqomah Tri Utami</h3>
                         <p class="about-person-nickname">“Icis”</p>
                         <p class="about-person-origin"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16 8.3c0 4.1-6 9.2-6 9.2S4 12.4 4 8.3a6 6 0 1 1 12 0Z"></path><circle cx="10" cy="8" r="2"></circle></svg>Surabaya, Jawa Timur</p>
+                    </div>
+                </article>
+                <article class="about-person-card">
+                    <div class="about-person-portrait portrait-andrew" role="img" aria-label="Placeholder foto Andrew Marlin">
+                        <span class="about-portrait-initials" aria-hidden="true">AM</span>
+                        <svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="43" r="20"></circle><path d="M22 112c2-25 16-39 38-39s36 14 38 39"></path></svg>
+                        <span class="about-portrait-label">Foto profil</span>
+                    </div>
+                    <div class="about-person-copy">
+                        <span class="about-person-role">Pengembang</span>
+                        <h3>Andrew Marlin</h3>
                     </div>
                 </article>
             </div>

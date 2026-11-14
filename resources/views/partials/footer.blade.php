@@ -14,7 +14,6 @@
             <h2>Jelajahi</h2>
             <a href="{{ route('regions.index') }}">Jelajah Nusantara</a>
             <a href="{{ route('cultural-map.index') }}">Peta Interaktif Nusantara</a>
-            <a href="{{ route('home') }}#kategori">Kategori budaya</a>
             <a href="{{ route('cultural-entries.index') }}">Arsip budaya</a>
             <a href="{{ route('digital-books.index') }}">Buku digital</a>
         </div>
