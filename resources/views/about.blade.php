@@ -122,6 +122,8 @@
                     <div class="about-person-copy">
                         <span class="about-person-role">Pengembang</span>
                         <h3>Andrew Marlin</h3>
+                        <p class="about-person-nickname">“Andrew”</p>
+                        <p class="about-person-origin"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16 8.3c0 4.1-6 9.2-6 9.2S4 12.4 4 8.3a6 6 0 1 1 12 0Z"></path><circle cx="10" cy="8" r="2"></circle></svg>Surabaya, Jawa Timur</p>
                     </div>
                 </article>
             </div>

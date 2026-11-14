@@ -447,6 +447,11 @@
 .is-night-reading .reader-pagination { background: #202722; }
 .is-night-reading .pagination-button { color: #e7dfce; }
 .is-night-reading .reader-afterword nav a:hover, .is-night-reading .chapter-travel-link a:hover { color: #e5c478; }
+/* Mode malam: teks hijau tua dan terakota ikut terang agar tidak hilang di latar gelap */
+.is-night-reading { --terracotta: #e3a47f; }
+.is-night-reading .cover-open, .is-night-reading .chapter-references summary { color: #e2d7bc; }
+.is-night-reading .cover-meta span { border-color: rgba(240,230,207,.22); color: #c9c1b0; }
+.is-night-reading .chapter-diagram > figcaption span, .is-night-reading .geography-heading > div > span, .is-night-reading .geography-note, .is-night-reading .chapter-references li > span { color: #b9b19f; }
 
 @media (max-width: 1000px) {
     .reader-layout { grid-template-columns: 190px minmax(0, 1fr); gap: 20px; }
